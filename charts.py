@@ -16,8 +16,10 @@ from focus import MIN_ROWS, as_segment, highlight_colors, is_active
 
 def _style(fig: go.Figure, height: int = 360, showlegend: bool = True) -> go.Figure:
     fig.update_layout(**PLOT_LAYOUT, height=height, showlegend=showlegend)
-    fig.update_xaxes(showgrid=False, zeroline=False, linecolor="#d6d5d0")
-    fig.update_yaxes(gridcolor="#ecebe7", zeroline=False, linecolor="rgba(0,0,0,0)")
+    fig.update_xaxes(showgrid=False, zeroline=False, linecolor="#dbe4f0",
+                     tickfont=dict(size=11))
+    fig.update_yaxes(gridcolor="#eef3fa", zeroline=False, linecolor="rgba(0,0,0,0)",
+                     tickfont=dict(size=11))
     return fig
 
 

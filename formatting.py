@@ -130,3 +130,55 @@ def section_title(title: str, lead: str = "") -> None:
     st.markdown(f"#### {title}")
     if lead:
         st.caption(lead)
+
+
+# ---------------------------------------------------------------- KPI with sparkline
+def _spark(values, color: str, fill: str):
+    """Tiny area chart for a KPI tile - no axes, no hover chrome."""
+    import plotly.graph_objects as go
+    f = go.Figure(go.Scatter(y=list(values), mode="lines", line=dict(color=color, width=1.8),
+                             fill="tozeroy", fillcolor=fill, hoverinfo="skip"))
+    f.update_layout(height=44, margin=dict(l=0, r=0, t=0, b=0),
+                    paper_bgcolor="rgba(0,0,0,0)", plot_bgcolor="rgba(0,0,0,0)",
+                    showlegend=False,
+                    xaxis=dict(visible=False, fixedrange=True),
+                    yaxis=dict(visible=False, fixedrange=True))
+    return f
+
+
+def kpi_spark_row(items: list[dict]) -> None:
+    """A row of KPI tiles, each optionally carrying a small distribution sparkline.
+
+    item = {label, value, spark (iterable|None), color, fill, help}
+    """
+    cols = st.columns(len(items))
+    for col, it in zip(cols, items):
+        with col:
+            with st.container(border=True):
+                st.markdown(
+                    f"<div style='font-size:.72rem;color:#6a7a92;text-transform:uppercase;"
+                    f"letter-spacing:.055em;font-weight:600'>{it['label']}</div>"
+                    f"<div style='font-size:1.6rem;font-weight:700;color:#13233d;"
+                    f"line-height:1.2;white-space:nowrap;overflow:hidden;"
+                    f"text-overflow:ellipsis'>{it['value']}</div>",
+                    unsafe_allow_html=True)
+                sp = it.get("spark")
+                if sp is not None and len(sp):
+                    st.plotly_chart(
+                        _spark(sp, it.get("color", "#1668d6"),
+                               it.get("fill", "rgba(22,104,214,.16)")),
+                        use_container_width=True,
+                        config={"displayModeBar": False, "staticPlot": True},
+                        key=it.get("key"))
+
+
+def hist_spark(series, bins: int = 28, weights=None):
+    """Binned density of a column, for use as a KPI sparkline."""
+    import numpy as np
+    s = np.asarray(series, dtype=float)
+    ok = ~np.isnan(s)
+    if ok.sum() < 10:
+        return None
+    w = None if weights is None else np.asarray(weights, dtype=float)[ok]
+    h, _ = np.histogram(s[ok], bins=bins, weights=w)
+    return h

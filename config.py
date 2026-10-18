@@ -40,31 +40,34 @@ SUB_SEGMENTS = [
 
 # ---- palette, lifted from the notebook so the dashboard matches the figures ----
 C = {
-    "blue": "#2a78d6", "orange": "#eb6834", "aqua": "#1baf7a", "yellow": "#eda100",
-    "magenta": "#e87ba4", "green": "#008300", "violet": "#6250d6", "red": "#e34948",
-    "grey": "#8a8984", "ink": "#0b0b0b", "ink2": "#52514e", "surface": "#fcfcfb",
-    "dim": "#d8d6cf",
+    "blue": "#1668d6", "blue_lt": "#5aa0f0", "navy": "#12315c",
+    "orange": "#eb6834", "aqua": "#12a37a", "yellow": "#e8a317",
+    "magenta": "#e87ba4", "green": "#0d8a4f", "violet": "#6250d6", "red": "#d94141",
+    "grey": "#97a4b8", "ink": "#13233d", "ink2": "#6a7a92", "surface": "#ffffff",
+    "dim": "#dbe4f0",
 }
-SEQ = ["#cde2fb", "#9ec5f4", "#6da7ec", "#3987e5", "#256abf", "#184f95", "#0d366b"]
+SEQ = ["#d7e6fa", "#aecdf5", "#84b3ef", "#5aa0f0", "#2f7fe0", "#1668d6", "#0f4a9c"]
 
 SEGMENT_COLOR = {
-    "GROW": C["aqua"], "REACTIVATE": C["blue"], "PROTECT": C["orange"], "BUILD": C["yellow"],
+    "GROW": C["blue"], "REACTIVATE": C["blue_lt"],
+    "PROTECT": C["orange"], "BUILD": C["yellow"],
 }
 TIER_COLOR = {
     "Distressed": C["red"], "Vulnerable": C["orange"], "Thin-file": C["grey"],
-    "Stable": C["blue"], "Resilient": C["aqua"],
+    "Stable": C["blue_lt"], "Resilient": C["blue"],
 }
 LEVEL_COLOR = {
-    "Cooling": SEQ[1], "Warm": SEQ[2], "Active": SEQ[4], "Champion": SEQ[6],
+    "Cooling": SEQ[1], "Warm": SEQ[3], "Active": SEQ[5], "Champion": C["navy"],
 }
 
 PLOT_LAYOUT = dict(
     paper_bgcolor="rgba(0,0,0,0)",
     plot_bgcolor="rgba(0,0,0,0)",
-    font=dict(size=13, color=C["ink2"]),
-    margin=dict(l=10, r=10, t=36, b=10),
+    font=dict(size=12, color=C["ink2"], family="Segoe UI, Inter, sans-serif"),
+    margin=dict(l=6, r=6, t=14, b=6),
     hoverlabel=dict(font_size=12),
-    legend=dict(orientation="h", yanchor="bottom", y=1.0, xanchor="left", x=0),
+    legend=dict(orientation="h", yanchor="bottom", y=1.0, xanchor="left", x=0,
+                font=dict(size=11)),
 )
 
 

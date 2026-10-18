@@ -22,10 +22,12 @@ from config import (DATA_DIR, ES_LEVELS, FHS_TIERS, SEGMENTS, SUB_SEGMENTS,
                     sample_available)
 from data_loader import load_csv, load_sample
 from focus import ALL, SEGMENT_SUBS, apply_focus, as_segment, is_active
-from formatting import KPI_CSS, chart_card, grid, kpi_cards, num, pct
+from formatting import (chart_card, grid, hist_spark, kpi_cards, kpi_spark_row,
+                        num, pct)
 from sections import (s1_start, s2_fhs, s3_es, s4_matrix, s4b_segment, s5_action,
                       s6_insights)
 from strings import LANGS, t
+from theme import CSS as THEME_CSS, BLUE, NAVY
 
 st.set_page_config(page_title="BI10 Customer Intelligence",
                    page_icon="chart_with_upwards_trend",
@@ -37,15 +39,6 @@ SECTIONS = [
     ("nav.4b", "navs.4b", s4b_segment.render), ("nav.5", "navs.5", s5_action.render),
     ("nav.6", "navs.6", s6_insights.render),
 ]
-
-CSS = """
-<style>
-div[data-testid="stSidebar"] div[role="radiogroup"] label p {font-size: 0.86rem;}
-div[data-testid="stSidebarUserContent"] {padding-top: 1rem;}
-section.main div[role="radiogroup"] {gap: 0.15rem;}
-</style>
-"""
-
 
 def guard_data() -> bool:
     missing = [f for f in ["summary_metrics.json", "segment_profile.csv",
@@ -156,27 +149,43 @@ def slicers_active(s: dict) -> bool:
 
 
 def header_kpis(lang: str, d: pd.DataFrame, s: dict) -> None:
-    """KPI strip that reacts to the slicers (weighted back to the population)."""
+    """KPI strip that reacts to the slicers (weighted back to the population).
+
+    Each tile carries a small weighted density curve of the slice, so the shape of
+    the selection is visible at a glance - the sparkline idea from the reference
+    Power BI dashboards, but showing distribution rather than a fake time series.
+    """
     from data_loader import load_metrics, weighted_mean
     m = load_metrics()
+    tot = m["customers_total"]
     if d.empty:
-        kpi_cards([(t("s1.kpi.customers", lang), num(m["customers_total"])),
-                   ("Avg FHS", "-"), ("Avg ES", "-"), ("Segments", str(len(SEGMENTS)))])
+        kpi_cards([(t("s1.kpi.customers", lang), num(tot)), ("Avg FHS", "-"),
+                   ("Avg ES", "-"), ("GROW share", "-")])
         return
     people = float(d["W"].sum())
-    kpi_cards([
-        (t("s1.kpi.customers", lang), num(people)),
-        (f"{t('ui.of_base', lang)}", pct(people / m["customers_total"])),
-        ("Avg FHS", f"{weighted_mean(d, 'FHS'):.1f}"),
-        ("Avg ES", f"{weighted_mean(d, 'ES'):.1f}"),
-        ("GROW share", pct((d.loc[d.SEGMENT == "GROW", "W"].sum() / people) if people else 0)),
+    w = d["W"].values
+    kpi_spark_row([
+        dict(label=t("s1.kpi.customers", lang), value=num(people),
+             spark=hist_spark(d["FHS"], weights=w), color=BLUE,
+             fill="rgba(22,104,214,.15)", key="k_people"),
+        dict(label=t("ui.of_base", lang), value=pct(people / tot),
+             spark=None, key="k_share"),
+        dict(label="Avg FHS", value=f"{weighted_mean(d, 'FHS'):.1f}",
+             spark=hist_spark(d["FHS"], weights=w), color=BLUE,
+             fill="rgba(22,104,214,.15)", key="k_fhs"),
+        dict(label="Avg ES", value=f"{weighted_mean(d, 'ES'):.1f}",
+             spark=hist_spark(d["ES"], weights=w), color="#5aa0f0",
+             fill="rgba(90,160,240,.18)", key="k_es"),
+        dict(label="GROW share",
+             value=pct((d.loc[d.SEGMENT == "GROW", "W"].sum() / people) if people else 0),
+             spark=None, key="k_grow"),
     ])
 
 
 def main() -> None:
     if not guard_data():
         return
-    st.markdown(CSS + KPI_CSS, unsafe_allow_html=True)
+    st.markdown(THEME_CSS, unsafe_allow_html=True)
 
     df = load_sample()
     s = slicer_panel(st.session_state.get("lang", "vi"), df)
