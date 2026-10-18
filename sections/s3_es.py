@@ -87,9 +87,18 @@ def render(ctx) -> None:
     with w2:
         with st.container(border=True):
             st.markdown(f"**{t('s3.limit.h', lang)}**")
-            st.caption(t("s3.selection.body", lang))
-            st.dataframe(split_table(m, "es_backtest_by_level").round(4),
-                         use_container_width=True)
+            st.caption(t("s3.weights.body", lang) if not cdc else "")
+            if cdc:
+                st.dataframe(pd.DataFrame({
+                    "check": ["positive calls tested",
+                              "application within 14 days (real dates)",
+                              "same, with call dates shuffled",
+                              "call dates reliable?"],
+                    "value": [f"{cdc.get('positive_outbound_calls_tested', 0):,}",
+                              f"{cdc.get('share_with_application_within_14d_real', 0):.2%}",
+                              f"{cdc.get('same_share_with_shuffled_call_dates', 0):.2%}",
+                              "no" if not cdc.get("call_dates_reliable", True) else "yes"],
+                }), hide_index=True, use_container_width=True)
 
     with st.expander(t("s3.selection.h", lang)):
         st.write(t("s3.selection.body", lang))
