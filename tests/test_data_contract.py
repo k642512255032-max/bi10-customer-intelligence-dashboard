@@ -49,13 +49,14 @@ def _share(df, col):
 
 # ---------------------------------------------------------------- schema
 def test_sample_shape(sample):
-    assert sample.shape[0] == 40_000
-    assert sample.shape[1] == 41  # 40 source columns + W
+    assert sample.shape[0] == 50_000          # 10 sub-segments x 5,000
+    assert sample.shape[1] == 45              # 44 source columns + W
 
 
 def test_stratification_holds(sample):
     counts = sample["SUB_SEGMENT"].value_counts()
     assert set(counts.index) == set(SUB_SEGMENTS)
+    assert len(counts) == 10, "the v5 pack has 10 sub-segments"
     assert (counts == 5_000).all(), "the sample is stratified at 5,000 rows per sub-segment"
 
 
@@ -95,9 +96,9 @@ def test_weighted_level_matches_truth(sample, metrics):
 def test_unweighted_is_wrong(sample):
     """Guard: if someone removes the weighting this test is the alarm."""
     unweighted = sample["FHS_TIER"].value_counts(normalize=True)["Distressed"]
-    assert unweighted > 0.12, "unweighted Distressed should be badly overstated (~14%)"
+    assert unweighted > 0.10, "unweighted Distressed should be badly overstated (~11.7%)"
     weighted = _share(sample, "FHS_TIER")["Distressed"]
-    assert weighted < 0.08, "weighted Distressed should be ~6%"
+    assert weighted < 0.08, "weighted Distressed should be ~6.2%"
 
 
 # ---------------------------------------------------------------- G: segment focus
@@ -111,16 +112,18 @@ def test_segment_mapping_complete(sub_profile):
 def test_focus_preserves_weights(sample):
     protect = apply_focus(sample, "PROTECT")
     got = _share(protect, "SUB_SEGMENT")
-    expected = {"Cautious Growers": 0.428, "Credit-Hungry Stressed": 0.154,
-                "Silent Risk": 0.418}
+    expected = {"Silent Risk": 0.521, "Credit-Hungry Stressed": 0.205,
+                "Credit-Hungry Newcomers": 0.155, "Stretched Seekers": 0.119}
     for k, v in expected.items():
         assert abs(got[k] - v) < 0.005, f"{k}: {got[k]:.3f} vs {v}"
 
 
 def test_focus_unweighted_is_wrong(sample):
     protect = apply_focus(sample, "PROTECT")
-    raw = protect["SUB_SEGMENT"].value_counts(normalize=True)["Credit-Hungry Stressed"]
-    assert raw > 0.30, "unweighted it looks like a third of PROTECT; truly it is 15%"
+    raw = protect["SUB_SEGMENT"].value_counts(normalize=True)["Stretched Seekers"]
+    wtd = _share(protect, "SUB_SEGMENT")["Stretched Seekers"]
+    assert raw > 0.20, "unweighted every sub-segment looks like 25% of PROTECT"
+    assert wtd < 0.15, "truly Stretched Seekers is ~11.9% of PROTECT"
 
 
 def test_segment_indexed_set(metrics):
@@ -164,3 +167,21 @@ def test_vnd_formatting():
     assert vnd(8_800_000) == "8.8M VND"
     assert pct(0.3211) == "32.1%"
     assert "64" in auc_plain(0.6359, "en")
+
+
+def test_call_date_check_present(metrics):
+    """v5 added a sanity check showing CALL timestamps do not line up with behaviour.
+    If it is ever reported as reliable, the forward evidence can be read as prediction;
+    until then it is association only."""
+    c = metrics["call_date_check"]
+    assert "call_dates_reliable" in c
+    assert c["share_with_application_within_14d_real"] > 0
+    assert c["same_share_with_shuffled_call_dates"] > 0
+
+
+def test_segment_counts_match_profile(sub_profile):
+    from focus import SEGMENT_SUBS
+    for seg, subs in SEGMENT_SUBS.items():
+        a = sub_profile.loc[sub_profile.SUB_SEGMENT.isin(subs), "customers"].sum()
+        b = sub_profile.loc[sub_profile.segment == seg, "customers"].sum()
+        assert a == b, f"{seg}: mapping {a:,} vs pack {b:,}"

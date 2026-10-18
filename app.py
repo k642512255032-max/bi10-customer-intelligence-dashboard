@@ -210,10 +210,13 @@ def main() -> None:
     SECTIONS[idx][2](ctx)
 
     st.divider()
+    from data_loader import load_metrics
+    tot = load_metrics()["customers_total"]
     st.caption(
-        "Source: BI10 Round-02 notebook export (RESULTS_PACK_v3). Population figures come "
-        "from the exported aggregate tables; customer-level charts use a 40,000-row "
-        "stratified sample reweighted to the full base of 1,000,528."
+        f"Source: BI10 Round-02 notebook export (v5 pack, 4 segments + 3 triggers). "
+        f"Population figures come from the exported aggregate tables; customer-level "
+        f"charts use a {len(df):,}-row stratified sample reweighted to the full base of "
+        f"{tot:,}."
     )
 
 

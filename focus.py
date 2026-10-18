@@ -1,11 +1,15 @@
 """Segment focus: one source of truth for which segment is being featured.
 
-Verified against sub_segment_profile.csv of RESULTS_PACK_v3:
-    GROW        387,780 = Prime Champions (210,021) + Loyal Core (177,759)
-    REACTIVATE  139,184 = Sleeping Prime (139,184)
-    PROTECT     291,144 = Cautious Growers (124,676) + Credit-Hungry Stressed (44,822)
-                          + Silent Risk (121,646)
-    BUILD       182,420 = New-to-Credit Explorers (50,767) + Dormant Unknowns (131,653)
+Verified against sub_segment_profile.csv of the v5 pack (4 segments + 3 triggers):
+    GROW        510,843 = Prime Champions (208,760) + Loyal Core (189,080)
+                          + Cautious Growers (113,003)
+    REACTIVATE  129,124 = Sleeping Prime (129,124)
+    PROTECT     210,773 = Silent Risk (109,807) + Credit-Hungry Stressed (43,257)
+                          + Credit-Hungry Newcomers (32,632) + Stretched Seekers (25,077)
+    BUILD       149,788 = Dormant Unknowns (126,001) + New-to-Credit Explorers (23,787)
+
+Note vs the earlier 8-cell scheme: Cautious Growers moved from PROTECT to GROW
+(clean Vulnerable customers now get structured growth, decision D16).
 """
 from __future__ import annotations
 
@@ -16,10 +20,11 @@ from config import C, SEGMENT_COLOR
 ALL = "All"
 
 SEGMENT_SUBS = {
-    "GROW": ["Prime Champions", "Loyal Core"],
+    "GROW": ["Prime Champions", "Loyal Core", "Cautious Growers"],
     "REACTIVATE": ["Sleeping Prime"],
-    "PROTECT": ["Cautious Growers", "Credit-Hungry Stressed", "Silent Risk"],
-    "BUILD": ["New-to-Credit Explorers", "Dormant Unknowns"],
+    "PROTECT": ["Silent Risk", "Credit-Hungry Stressed", "Credit-Hungry Newcomers",
+                "Stretched Seekers"],
+    "BUILD": ["Dormant Unknowns", "New-to-Credit Explorers"],
 }
 SUB_TO_SEGMENT = {s: seg for seg, subs in SEGMENT_SUBS.items() for s in subs}
 

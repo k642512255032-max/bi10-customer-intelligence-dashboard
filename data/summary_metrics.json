@@ -289,9 +289,9 @@
     0.8555059809
    ],
    [
-    186335,
+    186336,
     43425,
-    0.046730097
+    0.0467303478
    ],
    [
     170926,
@@ -309,9 +309,9 @@
     0.0063997926
    ],
    [
-    17825,
-    13276,
-    0.0044702497
+    17824,
+    13275,
+    0.0044699989
    ],
    [
     8970,
@@ -437,7 +437,7 @@
   "ICre_Transfer to Collection": "COLLECTION",
   "ICre_Transfer to Inbound": "SERVICE",
   "ICre_Transfer to Telesale": "SALES_INTEREST",
-  "ICre_Yeu_cau_mien_ giam/gia_h���n": "SERVICE",
+  "ICre_Yeu_cau_mien_ giam/gia_h���n": "COLLECTION",
   "ICre_��iem thuong": "SERVICE",
   "IS_SAI_MSIG": "SERVICE",
   "Inquiry": "SERVICE",
@@ -1499,12 +1499,13 @@
  },
  "scorecard_coef": {
   "prior_bad": 1.1125,
-  "prior_severe": 0.4519,
-  "prior_booked": 1.1166,
-  "tenure_days": 0.3546,
-  "rej_365": 0.8521,
-  "apps_90": 1.1244,
-  "scoring_channels_90": 1.1592
+  "prior_severe": 0.4521,
+  "prior_booked": 1.1163,
+  "tenure_days": 0.3544,
+  "rej_365": 0.8529,
+  "apps_90": 1.1252,
+  "scoring_channels_90": 1.1603,
+  "income": 0.0645
  },
  "scorecard": {
   "columns": [
@@ -1543,7 +1544,12 @@
    22,
    23,
    24,
-   25
+   25,
+   26,
+   27,
+   28,
+   29,
+   30
   ],
   "data": [
    [
@@ -1554,7 +1560,7 @@
     0.0046,
     0.0046,
     0.0883,
-    2.5475
+    2.5474
    ],
    [
     "Repayment discipline",
@@ -1563,8 +1569,8 @@
     3221,
     0.0615,
     0.0582,
-    -2.7902,
-    -80.5068
+    -2.79,
+    -80.5037
    ],
    [
     "Repayment discipline",
@@ -1573,8 +1579,8 @@
     111,
     0.1892,
     0.0707,
-    -3.0228,
-    -87.2195
+    -3.0227,
+    -87.2162
    ],
    [
     "Repayment discipline",
@@ -1584,7 +1590,7 @@
     0.0049,
     0.0049,
     0.0051,
-    0.1482
+    0.1483
    ],
    [
     "Repayment discipline",
@@ -1593,8 +1599,8 @@
     171,
     0.1813,
     0.0863,
-    -1.325,
-    -38.2318
+    -1.3256,
+    -38.2475
    ],
    [
     "Repayment discipline",
@@ -1603,8 +1609,8 @@
     95563,
     0.0068,
     0.0069,
-    -0.3539,
-    -10.2102
+    -0.3537,
+    -10.207
    ],
    [
     "Repayment discipline",
@@ -1613,8 +1619,8 @@
     95343,
     0.0069,
     0.0069,
-    -0.3539,
-    -10.2102
+    -0.3537,
+    -10.207
    ],
    [
     "Repayment discipline",
@@ -1623,8 +1629,8 @@
     82337,
     0.0058,
     0.0058,
-    -0.1709,
-    -4.9312
+    -0.1708,
+    -4.9296
    ],
    [
     "Repayment discipline",
@@ -1634,7 +1640,7 @@
     0.0045,
     0.0045,
     0.1099,
-    3.1712
+    3.1702
    ],
    [
     "Repayment discipline",
@@ -1643,8 +1649,8 @@
     140578,
     0.0024,
     0.0024,
-    0.8198,
-    23.6542
+    0.8195,
+    23.6468
    ],
    [
     "Repayment discipline",
@@ -1654,7 +1660,7 @@
     0.0056,
     0.0056,
     -0.0386,
-    -1.1131
+    -1.1123
    ],
    [
     "Repayment discipline",
@@ -1663,8 +1669,8 @@
     88668,
     0.0036,
     0.0038,
-    0.0948,
-    2.7357
+    0.0947,
+    2.7339
    ],
    [
     "Repayment discipline",
@@ -1673,8 +1679,8 @@
     200895,
     0.0039,
     0.0038,
-    0.0948,
-    2.7357
+    0.0947,
+    2.7339
    ],
    [
     "Repayment discipline",
@@ -1683,8 +1689,8 @@
     52296,
     0.0072,
     0.0072,
-    -0.1279,
-    -3.6897
+    -0.1278,
+    -3.6873
    ],
    [
     "Repayment discipline",
@@ -1694,7 +1700,7 @@
     0.0068,
     0.0068,
     -0.1081,
-    -3.12
+    -3.118
    ],
    [
     "Credit-seeking stress",
@@ -1704,7 +1710,7 @@
     0.0048,
     0.0048,
     0.0382,
-    1.1023
+    1.1034
    ],
    [
     "Credit-seeking stress",
@@ -1713,8 +1719,8 @@
     27920,
     0.0069,
     0.0069,
-    -0.2707,
-    -7.8108
+    -0.271,
+    -7.8183
    ],
    [
     "Credit-seeking stress",
@@ -1723,8 +1729,8 @@
     9063,
     0.0113,
     0.0111,
-    -0.6855,
-    -19.7792
+    -0.6862,
+    -19.7982
    ],
    [
     "Credit-seeking stress",
@@ -1733,8 +1739,8 @@
     439087,
     0.0047,
     0.0047,
-    0.0697,
-    2.0113
+    0.0698,
+    2.0128
    ],
    [
     "Credit-seeking stress",
@@ -1743,8 +1749,8 @@
     80565,
     0.0059,
     0.0059,
-    -0.1896,
-    -5.4697
+    -0.1897,
+    -5.4738
    ],
    [
     "Credit-seeking stress",
@@ -1753,8 +1759,8 @@
     12393,
     0.0066,
     0.0066,
-    -0.3114,
-    -8.984
+    -0.3116,
+    -8.9906
    ],
    [
     "Credit-seeking stress",
@@ -1763,8 +1769,8 @@
     3442,
     0.016,
     0.0154,
-    -1.2739,
-    -36.7559
+    -1.2748,
+    -36.7832
    ],
    [
     "Credit-seeking stress",
@@ -1773,8 +1779,8 @@
     362610,
     0.0046,
     0.0046,
-    0.0898,
-    2.5924
+    0.0899,
+    2.5948
    ],
    [
     "Credit-seeking stress",
@@ -1783,8 +1789,8 @@
     144315,
     0.0055,
     0.0055,
-    -0.1073,
-    -3.095
+    -0.1074,
+    -3.0979
    ],
    [
     "Credit-seeking stress",
@@ -1793,8 +1799,8 @@
     24997,
     0.007,
     0.007,
-    -0.3888,
-    -11.2174
+    -0.3891,
+    -11.2279
    ],
    [
     "Credit-seeking stress",
@@ -1803,37 +1809,89 @@
     3565,
     0.0093,
     0.009,
-    -0.6889,
-    -19.8786
+    -0.6896,
+    -19.8972
+   ],
+   [
+    "Financial capacity",
+    "Declared monthly income",
+    "12-20M",
+    156645,
+    0.0048,
+    0.0049,
+    0.0016,
+    0.0457
+   ],
+   [
+    "Financial capacity",
+    "Declared monthly income",
+    "5-8M",
+    80867,
+    0.0056,
+    0.0056,
+    -0.0076,
+    -0.2183
+   ],
+   [
+    "Financial capacity",
+    "Declared monthly income",
+    "8-12M",
+    264963,
+    0.0049,
+    0.0049,
+    0.0016,
+    0.0457
+   ],
+   [
+    "Financial capacity",
+    "Declared monthly income",
+    "<5M",
+    6212,
+    0.0055,
+    0.0056,
+    -0.0076,
+    -0.2183
+   ],
+   [
+    "Financial capacity",
+    "Declared monthly income",
+    ">20M",
+    26800,
+    0.0054,
+    0.0049,
+    0.0016,
+    0.0457
    ]
   ]
  },
  "pillar_weights_effective": {
-  "Repayment discipline": 67.23,
-  "Credit-seeking stress": 32.77
+  "Repayment discipline": 67.14,
+  "Credit-seeking stress": 32.76,
+  "Financial capacity": 0.11
  },
  "factor_weights_effective": {
-  "Past late payments": 89.77,
-  "Applications last 90d": 38.77,
-  "Past write-off / sold debt": 38.38,
-  "Loans successfully taken (track record)": 33.86,
-  "Channels shopped last 90d (credit hunger)": 22.47,
-  "Rejections last 12m": 20.88,
-  "Relationship tenure": 6.43
+  "Past late payments": 89.76,
+  "Applications last 90d": 38.8,
+  "Past write-off / sold debt": 38.4,
+  "Loans successfully taken (track record)": 33.85,
+  "Channels shopped last 90d (credit hunger)": 22.49,
+  "Rejections last 12m": 20.9,
+  "Relationship tenure": 6.42,
+  "Declared monthly income": 0.26
  },
  "fhs_contract_train": {
   "n": 535487,
   "rate": 0.005004790032251016,
-  "auc": 0.6683586873424443,
-  "gini": 0.3367173746848886,
-  "ks": 0.23523768680597262
+  "auc": 0.6685811121884492,
+  "gini": 0.33716222437689836,
+  "ks": 0.2351213219684236
  },
  "fhs_contract_oot": {
   "n": 838391,
   "rate": 0.014600586122704085,
-  "auc": 0.660253995931326,
-  "gini": 0.3205079918626521,
-  "ks": 0.26852627877943025
+  "auc": 0.6609840457617796,
+  "gini": 0.3219680915235592,
+  "ks": 0.2684645466484613
  },
  "fhs_benchmark_oot": {
   "columns": [
@@ -1843,16 +1901,16 @@
    "ks"
   ],
   "index": [
-   "FHS scorecard (behavioural factors only, explainable)",
-   "Gradient boosting (black box, +loan, demographic & company-limit vars)",
+   "FHS scorecard (8 behavioural factors, explainable)",
+   "Gradient boosting (black box, +MAX_OFFER, loan & demographic vars)",
    "Demographics only (age, gender, education)",
    "Income only"
   ],
   "data": [
    [
     838391.0,
-    0.6603,
-    0.3205,
+    0.661,
+    0.322,
     0.2685
    ],
    [
@@ -1887,16 +1945,16 @@
   ],
   "data": [
    [
-    0.6603,
+    0.661,
     1.0
    ],
    [
-    0.6516,
-    0.9252
+    0.6218,
+    0.7855
    ],
    [
-    0.6603,
-    0.9996
+    0.6309,
+    0.8416
    ]
   ]
  },
@@ -1920,16 +1978,16 @@
   ],
   "data": [
    [
-    0.6603,
-    0.6479,
+    0.661,
+    0.6491,
     1.0,
     1.0
    ],
    [
-    0.6371,
-    0.629,
-    0.9377,
-    0.6858
+    0.6293,
+    0.6253,
+    0.9037,
+    0.6532
    ]
   ]
  },
@@ -1955,56 +2013,56 @@
    [
     7153,
     0.0411,
-    11.46793,
+    11.46624,
     0.02633
    ],
    [
-    7895,
-    0.01089,
-    35.76042,
+    7902,
+    0.01088,
+    35.74615,
     0.01152
    ],
    [
-    49348,
-    0.00952,
-    46.82304,
+    49312,
+    0.00953,
+    46.81885,
     0.00788
    ],
    [
-    36147,
-    0.00503,
-    53.51036,
-    0.00626
+    55055,
+    0.00523,
+    53.99062,
+    0.00616
    ],
    [
-    121488,
-    0.00535,
-    55.8812,
-    0.00577
+    102622,
+    0.0053,
+    56.01432,
+    0.00574
    ],
    [
-    64851,
+    64838,
     0.00561,
-    61.84721,
-    0.0047
+    61.85324,
+    0.00469
    ],
    [
-    58034,
+    58082,
     0.00393,
-    67.18002,
-    0.00391
+    67.23165,
+    0.0039
    ],
    [
-    66348,
-    0.00273,
-    73.83094,
+    66094,
+    0.00274,
+    73.8402,
     0.0031
    ],
    [
-    124223,
+    124429,
     0.00181,
-    90.03225,
-    0.00177
+    90.00195,
+    0.00178
    ]
   ]
  },
@@ -2030,56 +2088,56 @@
    [
     13090,
     0.05936,
-    13.32588,
+    13.32492,
     0.02473
    ],
    [
-    15453,
-    0.03339,
-    35.56499,
+    15466,
+    0.03336,
+    35.55442,
     0.0116
    ],
    [
-    127953,
+    127851,
     0.02461,
-    46.75974,
+    46.74962,
     0.0079
    ],
    [
-    51892,
-    0.01237,
-    53.38088,
-    0.00629
+    92185,
+    0.01724,
+    54.04549,
+    0.00614
    ],
    [
-    230390,
-    0.01879,
-    55.6624,
-    0.00581
+    190192,
+    0.01779,
+    55.77809,
+    0.00579
    ],
    [
-    94162,
+    94156,
     0.01007,
-    61.63017,
+    61.65347,
     0.00473
    ],
    [
-    83049,
+    83092,
     0.00804,
-    67.0631,
-    0.00392
+    67.12338,
+    0.00391
    ],
    [
-    81623,
+    81241,
     0.00556,
-    73.95996,
+    73.97568,
     0.00309
    ],
    [
-    140779,
+    141118,
     0.00539,
-    89.53848,
-    0.0018
+    89.50761,
+    0.00181
    ]
   ]
  },
@@ -2095,23 +2153,23 @@
  ],
  "fhs_tier_mix": {
   "Resilient": 0.3211,
-  "Vulnerable": 0.2293,
+  "Vulnerable": 0.2291,
   "Stable": 0.2056,
   "Thin-file": 0.1823,
-  "Distressed": 0.0617
+  "Distressed": 0.0619
  },
  "fhs_stats_filed": {
   "count": 818108.0,
-  "mean": 64.36,
+  "mean": 64.37,
   "std": 20.75,
   "min": 0.0,
-  "25%": 54.5,
+  "25%": 54.6,
   "50%": 63.0,
-  "75%": 74.3,
+  "75%": 74.4,
   "max": 94.8
  },
  "fhs_vs_company_limit": {
-  "spearman_fhs_vs_limit": 0.49094481649266347,
+  "spearman_fhs_vs_limit": 0.4937402394081539,
   "share_filed_with_offer": 0.7685036694421763,
   "median_limit_by_tier": {
    "Distressed": 2000000.0,
@@ -2120,15 +2178,15 @@
    "Resilient": 12000000.0
   },
   "share_with_offer_by_tier": {
-   "Distressed": 0.5418,
-   "Vulnerable": 0.6902,
-   "Stable": 0.7491,
+   "Distressed": 0.5404,
+   "Vulnerable": 0.6907,
+   "Stable": 0.7492,
    "Resilient": 0.8804
   }
  },
  "fhs_top_negative_reasons": {
-  "Loans successfully taken (track record)": 0.5314,
-  "Past write-off / sold debt": 0.1298,
+  "Loans successfully taken (track record)": 0.4177,
+  "No material negative factor": 0.2434,
   "Rejections last 12m": 0.1021,
   "Applications last 90d": 0.078,
   "Channels shopped last 90d (credit hunger)": 0.0778,
@@ -2142,10 +2200,109 @@
   "Rejections last 12m": 0.0121,
   "Channels shopped last 90d (credit hunger)": 0.0033,
   "Applications last 90d": 0.0002,
-  "Past write-off / sold debt": 0.0001
+  "No material positive factor": 0.0001
+ },
+ "fhs_worked_example": {
+  "Resilient": {
+   "customer": 19761718,
+   "fhs": 83.5,
+   "rows": [
+    {
+     "factor": "Past late payments",
+     "bin": "0",
+     "fhs_points": 2.5
+    },
+    {
+     "factor": "Past write-off / sold debt",
+     "bin": "0",
+     "fhs_points": 0.1
+    },
+    {
+     "factor": "Loans successfully taken (track record)",
+     "bin": "5+",
+     "fhs_points": 23.6
+    },
+    {
+     "factor": "Relationship tenure",
+     "bin": "1-3y",
+     "fhs_points": -1.1
+    },
+    {
+     "factor": "Rejections last 12m",
+     "bin": "0",
+     "fhs_points": 1.1
+    },
+    {
+     "factor": "Applications last 90d",
+     "bin": "1",
+     "fhs_points": -5.5
+    },
+    {
+     "factor": "Channels shopped last 90d (credit hunger)",
+     "bin": "0",
+     "fhs_points": 2.6
+    },
+    {
+     "factor": "Declared monthly income",
+     "bin": "8-12M",
+     "fhs_points": 0.0
+    }
+   ]
+  },
+  "Vulnerable": {
+   "customer": 91991,
+   "fhs": 54.3,
+   "rows": [
+    {
+     "factor": "Past late payments",
+     "bin": "0",
+     "fhs_points": 2.5
+    },
+    {
+     "factor": "Past write-off / sold debt",
+     "bin": "0",
+     "fhs_points": 0.1
+    },
+    {
+     "factor": "Loans successfully taken (track record)",
+     "bin": "1",
+     "fhs_points": -10.2
+    },
+    {
+     "factor": "Relationship tenure",
+     "bin": "<1y",
+     "fhs_points": -3.7
+    },
+    {
+     "factor": "Rejections last 12m",
+     "bin": "0",
+     "fhs_points": 1.1
+    },
+    {
+     "factor": "Applications last 90d",
+     "bin": "0",
+     "fhs_points": 2.0
+    },
+    {
+     "factor": "Channels shopped last 90d (credit hunger)",
+     "bin": "0",
+     "fhs_points": 2.6
+    },
+    {
+     "factor": "Declared monthly income",
+     "bin": "5-8M",
+     "fhs_points": -0.2
+    }
+   ]
+  }
  },
  "backtest_newloan_n": 407032,
  "backtest_newloan_badrate": 0.01310953438550286,
+ "backtest_newloan_bads": 5336,
+ "backtest_newloan_ci95": [
+  0.01276009656772161,
+  0.01345897220328411
+ ],
  "fhs_live_stress_forward": {
   "columns": [
    "size",
@@ -2185,36 +2342,36 @@
    [
     241992.0,
     0.0094,
-    0.6411,
-    0.2822,
-    0.1984
+    0.6408,
+    0.2816,
+    0.1985
    ],
    [
     204639.0,
     0.1344,
-    0.4753,
-    -0.0495,
-    0.025
+    0.4749,
+    -0.0502,
+    0.0249
    ],
    [
     292228.0,
     0.1092,
-    0.4925,
-    -0.015,
-    0.0497
+    0.4917,
+    -0.0166,
+    0.0495
    ],
    [
     292228.0,
     0.0015,
-    0.4603,
-    -0.0795,
-    0.0493
+    0.4599,
+    -0.0803,
+    0.0475
    ],
    [
     292228.0,
     0.1092,
-    0.6572,
-    0.3144,
+    0.6567,
+    0.3134,
     0.3364
    ]
   ]
@@ -2247,15 +2404,46 @@
    ],
    [
     0.0097,
-    0.1335,
-    0.1024,
+    0.1334,
+    0.1025,
     0.0012
    ],
    [
     0.0056,
-    0.1533,
+    0.1534,
     0.1164,
     0.0017
+   ]
+  ]
+ },
+ "fhs_max_offer_spearman": 0.4937402394081539,
+ "fhs_max_offer_by_tier": {
+  "columns": [
+   "size",
+   "median"
+  ],
+  "index": [
+   "Distressed",
+   "Vulnerable",
+   "Stable",
+   "Resilient"
+  ],
+  "data": [
+   [
+    33480,
+    2000000.0
+   ],
+   [
+    158303,
+    2000000.0
+   ],
+   [
+    154128,
+    5000000.0
+   ],
+   [
+    282808,
+    12000000.0
    ]
   ]
  },
@@ -2273,15 +2461,15 @@
   "data": [
    [
     0.0381,
-    0.0524
+    0.0523
    ],
    [
-    0.0152,
-    0.0277
+    0.015,
+    0.0292
    ],
    [
-    0.0109,
-    0.019
+    0.0105,
+    0.0172
    ],
    [
     0.0045,
@@ -2290,16 +2478,586 @@
   ]
  },
  "fairness_mean_fhs_gender": {
-  "Female": 64.49,
-  "Male": 64.21
+  "Female": 64.5,
+  "Male": 64.23
  },
  "fhs_mean_by_ageband": {
-  "(17, 25]": 52.92,
-  "(25, 35]": 65.55,
-  "(35, 45]": 66.81,
-  "(45, 55]": 65.74,
-  "(55, 81]": 63.5,
-  "nan": 41.92
+  "(17, 25]": 52.89,
+  "(25, 35]": 65.56,
+  "(35, 45]": 66.82,
+  "(45, 55]": 65.75,
+  "(55, 81]": 63.51,
+  "nan": 41.94
+ },
+ "c1_extra": {
+  "tier_counts": {
+   "Resilient": 321237,
+   "Stable": 205727,
+   "Vulnerable": 229195,
+   "Distressed": 61949,
+   "Thin-file": 182420
+  },
+  "customers_total": 1000528,
+  "customers_with_credit_file": 818108,
+  "backtest_customer_level_filed": {
+   "customers": 241992,
+   "bad_rate": 0.009380475387616119
+  },
+  "backtest_loan_level": {
+   "loans": 407032,
+   "bad_rate": 0.01310953438550286
+  },
+  "backtest_thin_file": {
+   "customers": 116530,
+   "bad_rate": 0.024628850939672188
+  },
+  "backtest_all_customers": {
+   "customers": 358522,
+   "bad_rate": 0.014336637640089031
+  },
+  "backtest_vulnerable_split": {
+   "Building (short history)": {
+    "customers": 24100,
+    "bad_rate": 0.013775933609958506
+   },
+   "Stress signal": {
+    "customers": 4829,
+    "bad_rate": 0.019672810105611928
+   }
+  },
+  "backtest_tier_by_group": {
+   "Distressed | Building (short history)": {
+    "customers": 919,
+    "bad_rate": 0.022850924918389554
+   },
+   "Distressed | Stress signal": {
+    "customers": 4971,
+    "bad_rate": 0.04787769060551197
+   },
+   "Resilient | Building (short history)": {
+    "customers": 45452,
+    "bad_rate": 0.005346299392765995
+   },
+   "Resilient | Stress signal": {
+    "customers": 59159,
+    "bad_rate": 0.005781030781453371
+   },
+   "Stable | Building (short history)": {
+    "customers": 85755,
+    "bad_rate": 0.009025712786426448
+   },
+   "Stable | Stress signal": {
+    "customers": 16807,
+    "bad_rate": 0.013387279109894687
+   },
+   "Vulnerable | Building (short history)": {
+    "customers": 24100,
+    "bad_rate": 0.013775933609958506
+   },
+   "Vulnerable | Stress signal": {
+    "customers": 4829,
+    "bad_rate": 0.019672810105611928
+   }
+  },
+  "vulnerable_never_bad_share": 1.0,
+  "mix_train": {
+   "loans": 535487,
+   "bad_rate": 0.005004790032251016,
+   "share_first_loan": 0.17845998128806115,
+   "bad_rate_first_loan": 0.006780867071983927,
+   "bad_rate_repeat_customer": 0.004618979641938153
+  },
+  "mix_oot": {
+   "loans": 838391,
+   "bad_rate": 0.014600586122704085,
+   "share_first_loan": 0.2692347603922275,
+   "bad_rate_first_loan": 0.027365277950062907,
+   "bad_rate_repeat_customer": 0.009897709522464895
+  },
+  "oot_bad_rate_at_train_mix": 0.013014971457201964,
+  "rise_like_for_like_repeat": 2.1428346279334876,
+  "rise_like_for_like_first": 4.035660581391761,
+  "monthly_booked": {
+   "2023-01": {
+    "loans": 26957,
+    "first_loans_share": 0.2026560819082242
+   },
+   "2023-02": {
+    "loans": 17295,
+    "first_loans_share": 0.1762937265105522
+   },
+   "2023-03": {
+    "loans": 18278,
+    "first_loans_share": 0.15794944742313163
+   },
+   "2023-04": {
+    "loans": 24583,
+    "first_loans_share": 0.17377862750681367
+   },
+   "2023-05": {
+    "loans": 25086,
+    "first_loans_share": 0.18659810252730608
+   },
+   "2023-06": {
+    "loans": 23243,
+    "first_loans_share": 0.18792754807899154
+   },
+   "2023-07": {
+    "loans": 24407,
+    "first_loans_share": 0.1815053058548777
+   },
+   "2023-08": {
+    "loans": 25287,
+    "first_loans_share": 0.19021631668446237
+   },
+   "2023-09": {
+    "loans": 24700,
+    "first_loans_share": 0.18647773279352226
+   },
+   "2023-10": {
+    "loans": 26466,
+    "first_loans_share": 0.1910753419481599
+   },
+   "2023-11": {
+    "loans": 26395,
+    "first_loans_share": 0.1816253078234514
+   },
+   "2023-12": {
+    "loans": 29860,
+    "first_loans_share": 0.181178834561286
+   },
+   "2024-01": {
+    "loans": 35480,
+    "first_loans_share": 0.17807215332581736
+   },
+   "2024-02": {
+    "loans": 33325,
+    "first_loans_share": 0.19873968492123031
+   },
+   "2024-03": {
+    "loans": 30735,
+    "first_loans_share": 0.1752399544493249
+   },
+   "2024-04": {
+    "loans": 39066,
+    "first_loans_share": 0.17682895612553115
+   },
+   "2024-05": {
+    "loans": 35797,
+    "first_loans_share": 0.17616001340894488
+   },
+   "2024-06": {
+    "loans": 37940,
+    "first_loans_share": 0.17076963626779124
+   },
+   "2024-07": {
+    "loans": 36169,
+    "first_loans_share": 0.1649202355608394
+   },
+   "2024-08": {
+    "loans": 35785,
+    "first_loans_share": 0.16174374738018724
+   },
+   "2024-09": {
+    "loans": 30587,
+    "first_loans_share": 0.1495079608984209
+   },
+   "2024-10": {
+    "loans": 25743,
+    "first_loans_share": 0.141980344171231
+   },
+   "2024-11": {
+    "loans": 26756,
+    "first_loans_share": 0.16205710868590223
+   },
+   "2024-12": {
+    "loans": 351158,
+    "first_loans_share": 0.2765279446858679
+   },
+   "2025-01": {
+    "loans": 404558,
+    "first_loans_share": 0.2876571468120764
+   },
+   "2025-02": {
+    "loans": 20372,
+    "first_loans_share": 0.05806989986255645
+   },
+   "2025-03": {
+    "loans": 28820,
+    "first_loans_share": 0.03861901457321305
+   },
+   "2025-04": {
+    "loans": 36619,
+    "first_loans_share": 0.036975340670143915
+   },
+   "2025-05": {
+    "loans": 37315,
+    "first_loans_share": 0.040225110545357094
+   },
+   "2025-06": {
+    "loans": 4110,
+    "first_loans_share": 0.035523114355231145
+   }
+  },
+  "collections_exposure": {
+   "open_instalment_loans_mean_by_tier": {
+    "Distressed": 1.061,
+    "Vulnerable": 1.007,
+    "Stable": 1.088,
+    "Resilient": 1.282
+   },
+   "collection_rate_by_tier_all": {
+    "Distressed": 0.16694,
+    "Vulnerable": 0.10475,
+    "Stable": 0.13338,
+    "Resilient": 0.15337
+   },
+   "collection_calls_per_open_loan_by_tier": {
+    "Distressed": 0.7323,
+    "Vulnerable": 0.4018,
+    "Stable": 0.5001,
+    "Resilient": 0.5569
+   },
+   "collection_rate_by_tier_exactly_one_open_loan": {
+    "Distressed": 0.15847,
+    "Vulnerable": 0.09705,
+    "Stable": 0.12347,
+    "Resilient": 0.13753
+   },
+   "customers_exactly_one_open_loan": 143910,
+   "auc_exactly_one_open_loan": 0.478991084547384
+  },
+  "tradeoff_vnd": {
+   "FHS >= 0": {
+    "share_volume_vnd": 1.0,
+    "bad_vnd_rate": 0.018152296543121338,
+    "bad_vnd_avoided": 0.0,
+    "share_loans": 1.0
+   },
+   "FHS >= 40": {
+    "share_volume_vnd": 0.9678943157196045,
+    "bad_vnd_rate": 0.01702195219695568,
+    "bad_vnd_avoided": 0.09237653017044067,
+    "share_loans": 0.9659395198660291
+   },
+   "FHS >= 55": {
+    "share_volume_vnd": 0.7443371415138245,
+    "bad_vnd_rate": 0.013320333324372768,
+    "bad_vnd_avoided": 0.4537981152534485,
+    "share_loans": 0.7034891834478185
+   },
+   "FHS >= 60": {
+    "share_volume_vnd": 0.565005898475647,
+    "bad_vnd_rate": 0.010779197327792645,
+    "bad_vnd_avoided": 0.6644881963729858,
+    "share_loans": 0.4766356031970763
+   },
+   "FHS >= 80": {
+    "share_volume_vnd": 0.24490639567375183,
+    "bad_vnd_rate": 0.009265463799238205,
+    "bad_vnd_avoided": 0.8749926090240479,
+    "share_loans": 0.16832003206141288
+   }
+  },
+  "appetite_vnd": {
+   "Grow (>=60)": {
+    "share_volume_vnd": 0.565005898475647,
+    "bad_vnd_rate": 0.010779197327792645,
+    "median_loan_vnd": 8848000.0
+   },
+   "Structure (40-60)": {
+    "share_volume_vnd": 0.4028884470462799,
+    "bad_vnd_rate": 0.025776714086532593,
+    "median_loan_vnd": 8056000.0
+   },
+   "Protect (<40)": {
+    "share_volume_vnd": 0.03210555016994476,
+    "bad_vnd_rate": 0.05222930386662483,
+    "median_loan_vnd": 9513000.0
+   }
+  },
+  "male_to_female_bad_ratio_by_tier": {
+   "Distressed": 1.37,
+   "Vulnerable": 1.95,
+   "Stable": 1.65,
+   "Resilient": 1.42
+  },
+  "slope_train": {
+   "points_to_halve_odds": 17.196566258171668,
+   "bad_rate_at_fhs60": 0.005067709272946909
+  },
+  "slope_oot": {
+   "points_to_halve_odds": 19.43600005864946,
+   "bad_rate_at_fhs60": 0.013594633570399153
+  },
+  "call_date_check": {
+   "positive_calls": 6456,
+   "near_application_real": 0.17131350681536556,
+   "near_application_shuffled": 0.16573729863692688,
+   "call_dates_reliable": false
+  }
+ },
+ "c1_subgroup_counts": {
+  "Resilient": 321237,
+  "Stable": 205727,
+  "Vulnerable - building history": 200042,
+  "Thin-file": 182420,
+  "Distressed": 61949,
+  "Vulnerable - stress signal": 29153
+ },
+ "c1_stressed": {
+  "distressed": 61949,
+  "vulnerable_with_stress_signal": 29153,
+  "stressed_total": 91102,
+  "stressed_share": 0.09105392352837702,
+  "vulnerable_short_history_clean": 200042,
+  "stressed_or_live_alarm": 104746
+ },
+ "c1_drivers_by_tier": {
+  "columns": [
+   "Stress signal",
+   "Short history",
+   "Other"
+  ],
+  "index": [
+   "Distressed",
+   "Vulnerable",
+   "Stable",
+   "Resilient"
+  ],
+  "data": [
+   [
+    0.91,
+    0.09,
+    0.0
+   ],
+   [
+    0.1272,
+    0.8728,
+    0.0
+   ],
+   [
+    0.3205,
+    0.6795,
+    0.0
+   ],
+   [
+    0.2824,
+    0.0976,
+    0.6199
+   ]
+  ]
+ },
+ "c1_never_late_by_tier": {
+  "Distressed": 0.4976,
+  "Vulnerable": 1.0,
+  "Stable": 1.0,
+  "Resilient": 1.0
+ },
+ "c1_tradeoff": {
+  "columns": [
+   "n",
+   "observed",
+   "share_approved",
+   "late_rate_approved",
+   "bad_loans_avoided"
+  ],
+  "index": [
+   "FHS ≥ 80",
+   "FHS ≥ 70",
+   "FHS ≥ 65",
+   "FHS ≥ 60",
+   "FHS ≥ 55",
+   "FHS ≥ 50",
+   "FHS ≥ 40",
+   "FHS ≥ 30",
+   "FHS ≥ 0"
+  ],
+  "data": [
+   [
+    141118,
+    0.00539,
+    0.16832,
+    0.00539,
+    0.93783
+   ],
+   [
+    81241,
+    0.00556,
+    0.26522,
+    0.00546,
+    0.90091
+   ],
+   [
+    83092,
+    0.00804,
+    0.36433,
+    0.00616,
+    0.84634
+   ],
+   [
+    94156,
+    0.01007,
+    0.47664,
+    0.00708,
+    0.76889
+   ],
+   [
+    190192,
+    0.01779,
+    0.70349,
+    0.01053,
+    0.49244
+   ],
+   [
+    92185,
+    0.01724,
+    0.81344,
+    0.01144,
+    0.36263
+   ],
+   [
+    127851,
+    0.02461,
+    0.96594,
+    0.01352,
+    0.10563
+   ],
+   [
+    15466,
+    0.03336,
+    0.98439,
+    0.01389,
+    0.06348
+   ],
+   [
+    13090,
+    0.05936,
+    1.0,
+    0.0146,
+    0.0
+   ]
+  ]
+ },
+ "c1_appetite_bands": {
+  "columns": [
+   "share_of_loans",
+   "late_rate",
+   "share_of_bad_loans"
+  ],
+  "index": [
+   "Grow (FHS ≥ 60)",
+   "Grow with structure (40–60)",
+   "Protect (< 40)"
+  ],
+  "data": [
+   [
+    0.47664,
+    0.00708,
+    0.23111
+   ],
+   [
+    0.4893,
+    0.01979,
+    0.66326
+   ],
+   [
+    0.03406,
+    0.04528,
+    0.10563
+   ]
+  ]
+ },
+ "c1_stacking_signals": {
+  "columns": [
+   "loans",
+   "late_rate",
+   "vs_clean"
+  ],
+  "index": [
+   "3+ applications in 90 days",
+   "2+ rejections in 12 months",
+   "3+ channels shopped in 90 days",
+   "1+ past write-off / sold debt"
+  ],
+  "data": [
+   [
+    3442.0,
+    0.01598,
+    3.39603
+   ],
+   [
+    9063.0,
+    0.01125,
+    2.3514
+   ],
+   [
+    3565.0,
+    0.00926,
+    1.99795
+   ],
+   [
+    171.0,
+    0.18129,
+    36.6348
+   ]
+  ]
+ },
+ "c1_worked_example_fhs": 54.558099999999996,
+ "es_weights": {
+  "columns": [
+   "auc_calibration_half",
+   "weight_expert",
+   "weight_data",
+   "weight_used"
+  ],
+  "index": [
+   "R",
+   "F",
+   "I",
+   "L",
+   "P"
+  ],
+  "data": [
+   [
+    0.6532,
+    0.2,
+    0.2531,
+    0.2
+   ],
+   [
+    0.6483,
+    0.3,
+    0.245,
+    0.3
+   ],
+   [
+    0.6573,
+    0.15,
+    0.2598,
+    0.15
+   ],
+   [
+    0.5546,
+    0.1,
+    0.0902,
+    0.1
+   ],
+   [
+    0.592,
+    0.25,
+    0.152,
+    0.25
+   ]
+  ]
+ },
+ "es_weight_holdout_auc": {
+  "expert": 0.6627138867816116,
+  "data_driven": 0.6763033840346019,
+  "backtest_expert": 0.6188561142990867,
+  "backtest_data_driven": 0.6024652807659593,
+  "rule": "data-driven weights only if not worse on the forward hold-out AND the back-test",
+  "used": "expert"
  },
  "es_stats": {
   "columns": [
@@ -2333,84 +3091,84 @@
     1000528.0
    ],
    [
-    42.83,
-    36.42,
-    9.1,
+    42.8,
+    33.1,
+    1.16,
     14.35,
-    49.35,
-    34.63
+    46.0,
+    31.6
    ],
    [
-    21.12,
-    19.14,
-    4.88,
+    21.1,
+    19.89,
+    4.64,
     8.62,
-    27.02,
-    14.84
+    25.04,
+    14.78
    ],
    [
     23.87,
-    17.18,
-    0.5,
+    5.06,
+    0.0,
     1.58,
     0.0,
-    12.2
+    7.8
    ],
    [
     25.92,
-    18.36,
-    5.0,
+    6.18,
+    0.0,
     6.0,
     20.0,
-    19.6
+    15.3
    ],
    [
-    29.04,
-    19.91,
-    8.75,
+    29.03,
+    21.22,
+    0.0,
     10.0,
     20.0,
-    22.1
+    20.6
    ],
    [
     34.21,
-    31.25,
-    8.75,
+    29.79,
+    0.0,
     15.0,
     35.0,
-    30.0
+    27.2
    ],
    [
-    48.09,
-    46.78,
-    8.75,
+    47.94,
+    43.8,
+    0.0,
     15.0,
-    75.0,
-    44.4
+    60.0,
+    40.5
    ],
    [
-    82.35,
-    64.23,
-    10.34,
+    82.31,
+    59.47,
+    0.0,
     15.0,
-    85.0,
-    57.2
+    80.0,
+    53.9
    ],
    [
-    98.26,
+    98.25,
     100.0,
-    34.1,
+    24.14,
     50.54,
     100.0,
-    74.3
+    72.7
    ],
    [
     99.95,
     100.0,
-    79.0,
+    77.92,
     94.0,
     100.0,
-    91.6
+    90.3
    ]
   ]
  },
@@ -2432,75 +3190,82 @@
   "data": [
    [
     1.0,
-    0.717,
-    0.093,
+    0.686,
+    0.208,
     0.099,
-    0.456
+    0.468
    ],
    [
-    0.717,
+    0.686,
     1.0,
-    0.09,
-    0.217,
-    0.716
+    0.233,
+    0.166,
+    0.768
    ],
    [
-    0.093,
-    0.09,
+    0.208,
+    0.233,
     1.0,
-    0.013,
-    0.094
+    0.021,
+    0.213
    ],
    [
     0.099,
-    0.217,
-    0.013,
+    0.166,
+    0.021,
     1.0,
-    0.075
+    0.053
    ],
    [
-    0.456,
-    0.716,
-    0.094,
-    0.075,
+    0.468,
+    0.768,
+    0.213,
+    0.053,
     1.0
    ]
   ]
  },
  "selection_check": {
   "share_customers_with_application": 1.0,
-  "share_with_self_activity_last_180d": 0.9491258615451041,
+  "share_with_self_activity_last_180d": 0.9490479027073705,
   "max_days_since_last_self_activity": 185.99216435185184,
   "share_first_application_after_2024_12_01": 0.31914249276382073,
   "share_dormant": 0.0
  },
  "es_cuts": [
-  25.0,
-  41.0,
-  57.0
+  24.0,
+  38.0,
+  54.0
  ],
  "es_level_mix": {
-  "Cooling": 0.3923,
-  "Warm": 0.3018,
-  "Active": 0.2034,
-  "Champion": 0.1025
+  "Cooling": 0.3847,
+  "Warm": 0.3156,
+  "Active": 0.2002,
+  "Champion": 0.0996
+ },
+ "call_date_check": {
+  "positive_outbound_calls_tested": 6456,
+  "share_with_application_within_14d_real": 0.1713,
+  "same_share_with_shuffled_call_dates": 0.1657,
+  "call_dates_reliable": false,
+  "call_window": [
+   "2025-01-01 03:47:11",
+   "2026-08-31 23:11:28"
+  ]
  },
  "es_worked_example": {
   "columns": [
-   "Cooling (#8067)",
-   "Warm (#219855)",
-   "Champion (#421172)"
+   "Cooling (#822115)",
+   "Warm (#1088784)",
+   "Champion (#3286995)"
   ],
   "index": [
    "days_since_last_cie",
    "cie_12m",
    "cie_decayed",
    "gma_sessions",
-   "ob_attempts_12m",
-   "ob_connected_12m",
+   "inbound_clean_12m",
    "ob_positive_12m",
-   "ob_refuse_12m",
-   "inbound_12m",
    "pull_leads_decayed",
    "n_deal",
    "n_notint",
@@ -2516,23 +3281,23 @@
   ],
   "data": [
    [
-    131.213,
-    130.206,
-    15.449
+    177.262,
+    147.159,
+    4.195
    ],
    [
     1.0,
-    2.0,
-    10.0
+    1.0,
+    14.0
    ],
    [
-    0.905,
-    1.817,
-    5.778
+    0.758,
+    1.501,
+    9.886
    ],
    [
     0.0,
-    0.0,
+    1.18,
     0.0
    ],
    [
@@ -2558,32 +3323,17 @@
    [
     0.0,
     0.0,
-    0.0
-   ],
-   [
-    0.0,
-    0.0,
-    0.0
-   ],
-   [
-    0.0,
-    0.0,
-    0.0
-   ],
-   [
-    0.0,
-    5.0,
     0.0
    ],
    [
     1.0,
-    2.0,
-    4.0
+    1.0,
+    2.0
    ],
    [
     0.0,
     0.0,
-    1.0
+    0.0
    ],
    [
     0.0,
@@ -2591,34 +3341,34 @@
     1.0
    ],
    [
-    36.402,
-    36.685,
-    88.782
+    25.533,
+    32.195,
+    96.821
    ],
    [
-    20.134,
-    32.355,
-    59.784
+    20.84,
+    33.864,
+    88.192
    ],
    [
-    8.75,
-    8.75,
-    8.75
+    0.0,
+    16.079,
+    0.0
    ],
    [
     15.0,
-    4.286,
+    15.0,
     15.0
    ],
    [
     20.0,
-    55.0,
-    100.0
+    35.0,
+    55.0
    ],
    [
-    21.1,
-    32.5,
-    63.5
+    17.9,
+    29.3,
+    61.1
    ]
   ]
  },
@@ -2630,6 +3380,8 @@
    "ob_attempts_12m",
    "ob_connected_12m",
    "inbound_12m",
+   "inbound_clean_12m",
+   "ob_positive_12m",
    "pull_leads_decayed",
    "n_push_leads",
    "families_12m",
@@ -2644,7 +3396,6 @@
    "n"
   ],
   "index": [
-   "Dormant",
    "Cooling",
    "Warm",
    "Active",
@@ -2652,104 +3403,92 @@
   ],
   "data": [
    [
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null,
-    null
-   ],
-   [
-    154.227,
-    1.136,
-    0.007,
-    0.415,
-    0.029,
-    0.0,
+    155.076,
+    1.243,
+    0.005,
+    0.364,
+    0.03,
     0.001,
-    1.041,
-    0.99,
-    0.341,
-    30.765,
-    20.826,
-    8.54,
-    12.96,
-    24.935,
-    21.212,
-    0.07,
-    392483.0
+    0.0,
+    0.0,
+    0.003,
+    0.9,
+    1.02,
+    0.253,
+    30.613,
+    15.99,
+    0.09,
+    13.149,
+    24.263,
+    18.313,
+    0.082,
+    384870
    ],
    [
-    136.693,
-    2.818,
-    0.045,
-    0.862,
-    0.068,
-    0.016,
-    0.034,
-    1.695,
-    1.797,
-    0.698,
-    36.647,
-    33.473,
-    8.944,
-    13.928,
-    50.32,
-    32.686,
-    0.079,
-    302004.0
-   ],
-   [
-    88.52,
-    6.85,
-    0.089,
-    1.564,
-    0.124,
-    0.064,
-    0.071,
-    1.898,
-    3.028,
-    0.829,
-    54.986,
-    51.214,
-    9.342,
-    15.185,
-    75.513,
-    48.159,
-    0.079,
-    203491.0
-   ],
-   [
-    26.298,
-    19.378,
-    0.258,
-    1.932,
-    0.146,
-    0.129,
-    0.17,
-    1.583,
-    3.45,
+    136.698,
+    2.255,
+    0.048,
     0.939,
-    83.133,
-    75.388,
-    11.251,
-    19.252,
-    87.996,
-    64.855,
-    0.075,
-    102550.0
+    0.071,
+    0.011,
+    0.01,
+    0.002,
+    0.039,
+    1.696,
+    1.468,
+    0.771,
+    36.373,
+    32.001,
+    0.851,
+    14.201,
+    45.048,
+    29.685,
+    0.076,
+    315731
+   ],
+   [
+    85.254,
+    4.335,
+    0.092,
+    1.497,
+    0.117,
+    0.062,
+    0.057,
+    0.014,
+    0.063,
+    2.092,
+    2.321,
+    0.869,
+    56.475,
+    48.028,
+    2.072,
+    14.585,
+    69.016,
+    44.727,
+    0.078,
+    200310
+   ],
+   [
+    27.086,
+    11.946,
+    0.252,
+    2.038,
+    0.149,
+    0.152,
+    0.139,
+    0.037,
+    0.168,
+    1.692,
+    3.121,
+    0.951,
+    82.724,
+    72.665,
+    4.427,
+    18.988,
+    86.744,
+    62.593,
+    0.073,
+    99617
    ]
   ]
  },
@@ -2764,78 +3503,99 @@
   "index": [
    "Back-test: stays engaged (self-initiated activity 2025H1)",
    "Forward: positive / win response (≥1 sales call)",
+   "Forward HOLD-OUT half (not used for weights): positive response",
    "Forward: same, ES without GMA (leakage check)",
    "Forward: customer calls us inbound",
-   "Forward: answers ≥1 sales call",
-   "Back-test: applies for a new loan (existing customers)",
-   "Back-test: applies (existing, not just-booked)"
+   "Forward: answers ≥1 sales call (reachability, not engagement)"
   ],
   "data": [
    [
     821623.0,
     0.2478,
-    0.6359,
-    0.2719,
-    0.2607
+    0.6189,
+    0.2377,
+    0.229
    ],
    [
     341391.0,
     0.0321,
-    0.6422,
-    0.2845,
-    0.2177
+    0.6636,
+    0.3272,
+    0.2534
+   ],
+   [
+    170368.0,
+    0.0319,
+    0.6627,
+    0.3254,
+    0.2531
    ],
    [
     341391.0,
     0.0321,
-    0.6449,
-    0.2898,
-    0.2222
+    0.6706,
+    0.3412,
+    0.2641
    ],
    [
     1000528.0,
     0.047,
-    0.7063,
-    0.4125,
-    0.3245
+    0.7162,
+    0.4324,
+    0.3247
    ],
    [
     341391.0,
     0.4341,
     0.5179,
     0.0358,
-    0.0305
-   ],
+    0.0332
+   ]
+  ]
+ },
+ "es_selection_diagnostic": {
+  "columns": [
+   "n",
+   "rate",
+   "auc",
+   "gini",
+   "ks"
+  ],
+  "index": [
+   "Back-test: applies for a new loan (existing customers)",
+   "Back-test: applies (existing, not just-booked)"
+  ],
+  "data": [
    [
     821623.0,
     0.549,
-    0.2757,
-    -0.4486,
-    0.0026
+    0.2599,
+    -0.4802,
+    0.0028
    ],
    [
     487081.0,
     0.7369,
-    0.2267,
-    -0.5466,
-    0.0024
+    0.2346,
+    -0.5309,
+    0.0045
    ]
   ]
  },
  "es_dim_auc_backtest": {
-  "R": 0.4863,
-  "F": 0.663,
+  "R": 0.4862,
+  "F": 0.6508,
   "L": 0.5522,
-  "P": 0.651,
-  "ES": 0.6359
+  "P": 0.6379,
+  "ES": 0.6189
  },
  "es_dim_auc_forward": {
-  "R": 0.6424,
-  "F": 0.6352,
-  "I": 0.5219,
+  "R": 0.6517,
+  "F": 0.6491,
+  "I": 0.6562,
   "L": 0.5542,
-  "P": 0.5729,
-  "ES": 0.6422
+  "P": 0.5901,
+  "ES": 0.6636
  },
  "es_backtest_by_level": {
   "columns": [
@@ -2857,24 +3617,24 @@
     0.743
    ],
    [
-    0.1875,
-    0.66,
-    0.4562
+    0.2088,
+    0.7042,
+    0.4834
    ],
    [
-    0.175,
-    0.3304,
-    0.2326
+    0.1657,
+    0.2984,
+    0.215
    ],
    [
-    0.3382,
-    0.4222,
-    0.3121
+    0.3114,
+    0.3837,
+    0.2866
    ],
    [
-    0.5976,
-    0.4896,
-    0.3475
+    0.5954,
+    0.4866,
+    0.3432
    ]
   ]
  },
@@ -2887,7 +3647,6 @@
    "inbound_rate"
   ],
   "index": [
-   "Dormant",
    "Cooling",
    "Warm",
    "Active",
@@ -2895,39 +3654,32 @@
   ],
   "data": [
    [
-    null,
-    null,
-    null,
-    null,
-    null
+    0.0837,
+    0.2921,
+    0.2829,
+    62098,
+    0.0162
    ],
    [
-    0.08,
-    0.3117,
-    0.261,
-    70395.0,
-    0.0174
-   ],
-   [
-    0.078,
-    0.514,
-    0.5403,
-    103420.0,
-    0.0399
+    0.0768,
+    0.4062,
+    0.4473,
+    118567,
+    0.0407
    ],
    [
     0.0771,
-    0.8759,
-    1.2702,
-    111943.0,
-    0.0808
+    0.8175,
+    1.1296,
+    105409,
+    0.078
    ],
    [
-    0.0695,
-    1.1116,
-    1.3484,
-    55633.0,
-    0.1145
+    0.069,
+    1.3699,
+    1.6996,
+    55317,
+    0.124
    ]
   ]
  },
@@ -2972,10 +3724,12 @@
    "rate_with",
    "rate_without",
    "lift",
-   "outcome"
+   "outcome",
+   "effect",
+   "outcome_note"
   ],
   "index": [
-   "+ Self-initiated activity in last 90d",
+   "− Self-initiated activity in last 90d",
    "+ Self-generated lead (GMA/landing/SOB)",
    "+ Explored ≥2 product families",
    "+ Holds an active product",
@@ -2983,7 +3737,7 @@
    "− Rejected in last 90d",
    "+ A loan matures in next 90 days",
    "− Just booked a loan (≤90d)",
-   "+ Uses the mobile app (GMA)",
+   "○ Uses the mobile app (GMA)",
    "+ Called us inbound",
    "+ Responded positively before",
    "− ≥5 unanswered sales calls (call fatigue)",
@@ -2995,6 +3749,8 @@
     0.239,
     0.2658,
     0.8992,
+    "stays self-active (back-test)",
+    "reduces",
     "stays self-active (back-test)"
    ],
    [
@@ -3002,13 +3758,17 @@
     0.4457,
     0.2401,
     1.8564,
+    "stays self-active (back-test)",
+    "drives",
     "stays self-active (back-test)"
    ],
    [
-    0.3897,
-    0.4013,
-    0.1498,
-    2.6795,
+    0.3464,
+    0.4034,
+    0.1653,
+    2.4396,
+    "stays self-active (back-test)",
+    "drives",
     "stays self-active (back-test)"
    ],
    [
@@ -3016,6 +3776,8 @@
     0.2786,
     0.2158,
     1.2912,
+    "stays self-active (back-test)",
+    "drives",
     "stays self-active (back-test)"
    ],
    [
@@ -3023,6 +3785,8 @@
     0.1675,
     0.2588,
     0.6471,
+    "stays self-active (back-test)",
+    "reduces",
     "stays self-active (back-test)"
    ],
    [
@@ -3030,6 +3794,8 @@
     0.2152,
     0.2548,
     0.8448,
+    "stays self-active (back-test)",
+    "reduces",
     "stays self-active (back-test)"
    ],
    [
@@ -3037,20 +3803,26 @@
     0.7301,
     0.5301,
     1.3772,
-    "applies for a new loan (back-test)"
+    "applies for a new loan (back-test)",
+    "drives",
+    "applies (diagnostic: selection-biased outcome)"
    ],
    [
     0.4072,
     0.2755,
     0.7369,
     0.3738,
-    "applies for a new loan (back-test)"
+    "applies for a new loan (back-test)",
+    "reduces",
+    "applies (diagnostic: selection-biased outcome)"
    ],
    [
     0.0935,
     0.0072,
     0.0073,
     0.9916,
+    "positive outcome per sales call (forward)",
+    "no clear effect",
     "positive outcome per sales call (forward)"
    ],
    [
@@ -3058,6 +3830,8 @@
     0.0224,
     0.0062,
     3.6343,
+    "positive outcome per sales call (forward)",
+    "drives",
     "positive outcome per sales call (forward)"
    ],
    [
@@ -3065,6 +3839,8 @@
     0.0863,
     0.0042,
     20.3211,
+    "positive outcome per sales call (forward)",
+    "drives",
     "positive outcome per sales call (forward)"
    ],
    [
@@ -3072,6 +3848,8 @@
     0.0063,
     0.0077,
     0.8135,
+    "positive outcome per sales call (forward)",
+    "reduces",
     "positive outcome per sales call (forward)"
    ],
    [
@@ -3079,6 +3857,8 @@
     0.0176,
     0.0065,
     2.718,
+    "positive outcome per sales call (forward)",
+    "drives",
     "positive outcome per sales call (forward)"
    ]
   ]
@@ -3094,7 +3874,8 @@
    "lift_only_vs_no_signal"
   ],
   "index": [
-   "Loan application  [weight 1.5]",
+   "Loan application, not rejected  [booked 1.5 · other 1.0 · cancelled 0.7]",
+   "Rejected application  [0.3]",
    "Self-initiated scoring (app/web/store)  [1.0]",
    "Self-generated lead (GMA/landing/SOB)  [1.0]",
    "Warm lead (TLS / RTDM)  [0.5]",
@@ -3103,13 +3884,22 @@
   ],
   "data": [
    [
-    0.678,
-    0.2277,
-    0.2903,
-    0.7843,
-    168358.0,
-    0.0929,
-    0.3897
+    0.5264,
+    0.2412,
+    0.2552,
+    0.945,
+    75706.0,
+    0.1002,
+    0.4205
+   ],
+   [
+    0.1958,
+    0.2344,
+    0.2511,
+    0.9337,
+    87757.0,
+    0.083,
+    0.3483
    ],
    [
     0.2704,
@@ -3126,8 +3916,8 @@
     0.2421,
     1.8614,
     72.0,
-    0.5556,
-    2.3307
+    null,
+    null
    ],
    [
     0.0088,
@@ -3135,8 +3925,8 @@
     0.2464,
     1.6635,
     215.0,
-    0.5116,
-    2.1464
+    null,
+    null
    ],
    [
     0.0712,
@@ -3153,8 +3943,8 @@
     0.2706,
     0.7351,
     2.0,
-    1.0,
-    4.1952
+    null,
+    null
    ]
   ]
  },
@@ -3173,30 +3963,30 @@
   ],
   "data": [
    [
-    0.5629,
-    0.637
+    0.5483,
+    0.6489
    ],
    [
-    0.6253,
-    0.6365
+    0.6108,
+    0.6507
    ],
    [
-    0.663,
-    0.6352
+    0.6508,
+    0.6491
    ],
    [
-    0.6859,
-    0.6328
+    0.6757,
+    0.6451
    ],
    [
-    0.7038,
-    0.6275
+    0.6935,
+    0.6358
    ]
   ]
  },
  "es_halflife_gap_vs_best": {
-  "AUC back-test (stays self-active)": 0.0408,
-  "AUC forward (positive call outcome)": 0.0018
+  "AUC back-test (stays self-active)": 0.0427,
+  "AUC forward (positive call outcome)": 0.0016
  },
  "es_weight_sensitivity": {
   "columns": [
@@ -3207,7 +3997,8 @@
    "same level as ours"
   ],
   "index": [
-   "Ours 20/30/15/10/25",
+   "Ours (weights used)",
+   "Expert start 20/30/15/10/25",
    "Equal (20% each)",
    "Machine-learned on back-test outcome",
    "Machine-learned on forward outcome*",
@@ -3220,66 +4011,73 @@
   "data": [
    [
     "20/30/15/10/25",
-    0.6359480709,
-    0.6422430755,
-    0.9999927567,
-    0.9944599252
+    0.6188564458,
+    0.6636031668,
+    0.9999949059,
+    0.9972244655
+   ],
+   [
+    "20/30/15/10/25",
+    0.6188564458,
+    0.6636031668,
+    0.9999949059,
+    0.9972244655
    ],
    [
     "20/20/20/20/20",
-    0.6268728132,
-    0.6467375338,
-    0.995343115,
-    0.9366084707
+    0.6115688217,
+    0.6720301854,
+    0.9957038262,
+    0.9335320951
    ],
    [
-    "0/78/0/15/7",
-    0.6672868248,
-    0.6349127913,
-    0.9523745088,
-    0.8119183071
+    "0/69/0/23/8",
+    0.6549462169,
+    0.6489831231,
+    0.9678469362,
+    0.8240079238
    ],
    [
-    "30/18/27/23/2",
-    0.582573375,
-    0.6582166892,
-    0.8808009215,
-    0.6978275471
+    "13/8/68/11/0",
+    0.5772649419,
+    0.7080101363,
+    0.8893078813,
+    0.6986770985
    ],
    [
     "0/30/15/10/25",
-    0.6707985105,
-    0.6216829284,
-    0.9839513106,
-    0.8779834248
+    0.6547691233,
+    0.6485059521,
+    0.9809700121,
+    0.8559970336
    ],
    [
     "20/0/15/10/25",
-    0.6050890651,
-    0.6375114282,
-    0.9744320902,
-    0.8276999744
+    0.591167833,
+    0.6631736141,
+    0.9709406864,
+    0.8570944541
    ],
    [
     "20/30/0/10/25",
-    0.6359480709,
-    0.6404675713,
-    0.9988367761,
-    0.9709533366
+    0.6188564458,
+    0.6530444053,
+    0.9993080275,
+    0.9745444405
    ],
    [
     "20/30/15/0/25",
-    0.6344587384,
-    0.6404968882,
-    0.9982139087,
-    0.9712301905
+    0.6170769968,
+    0.6620239271,
+    0.998215603,
+    0.9572455743
    ],
    [
     "20/30/15/10/0",
-    0.6086446322,
-    0.6562214146,
-    0.9173391392,
-    0.7904226568
+    0.5993650723,
+    0.677128335,
+    0.9558564693,
+    0.8070558745
    ]
   ]
  },
@@ -3302,37 +4100,37 @@
    [
     0.2,
     1.0,
-    0.6311,
-    0.4863,
-    0.6424
+    0.5783,
+    0.4862,
+    0.6517
    ],
    [
     0.3,
     1.0,
     1.0,
-    0.663,
-    0.6352
+    0.6508,
+    0.6491
    ],
    [
     0.15,
-    0.1446,
-    -0.0788,
+    0.0943,
+    0.201,
     null,
-    0.5219
+    0.6562
    ],
    [
     0.1,
     0.3776,
-    0.0378,
+    -0.0845,
     0.5522,
     0.5542
    ],
    [
     0.25,
     0.9954,
-    0.7229,
-    0.651,
-    0.5729
+    0.7951,
+    0.6379,
+    0.5901
    ]
   ]
  },
@@ -3356,61 +4154,61 @@
   ],
   "data": [
    [
-    0.18282,
-    0.28267,
-    0.0135
+    0.1828,
+    0.33411,
+    0.00648
    ],
    [
-    0.2325,
-    0.32342,
-    0.01263
+    0.2376,
+    0.32465,
+    0.01315
    ],
    [
-    0.26489,
-    0.33271,
-    0.0194
+    0.25468,
+    0.27863,
+    0.02197
    ],
    [
-    0.12077,
-    0.29929,
-    0.02385
+    0.12506,
+    0.27583,
+    0.02511
    ],
    [
-    0.10265,
-    0.41455,
-    0.0262
+    0.19508,
+    0.31873,
+    0.03095
    ],
    [
-    0.12892,
-    0.57195,
-    0.04229
+    0.13168,
+    0.39287,
+    0.03908
    ],
    [
-    0.2173,
-    0.54443,
-    0.0547
+    0.18279,
+    0.48606,
+    0.05394
    ],
    [
-    0.27905,
-    0.69867,
-    0.071
+    0.26484,
+    0.62072,
+    0.0637
    ],
    [
-    0.36437,
-    1.03529,
-    0.092
+    0.33116,
+    0.97189,
+    0.09212
    ],
    [
-    0.58484,
-    1.11446,
-    0.1149
+    0.57242,
+    1.36781,
+    0.12397
    ]
   ]
  },
  "es_decile_monotonicity": {
-  "stays self-active (back-test)": 0.5515151515151515,
-  "positive per 100 sales calls (forward)": 0.9515151515151514,
-  "calls us inbound (forward)": 0.9878787878787878
+  "stays self-active (back-test)": 0.5030303030303029,
+  "positive per 100 sales calls (forward)": 0.7939393939393938,
+  "calls us inbound (forward)": 0.9999999999999999
  },
  "es_walkforward": {
   "columns": [
@@ -3431,33 +4229,33 @@
   "data": [
    [
     642739.0,
-    0.0892,
-    0.6685,
-    7.4975,
-    1.6552,
-    1.6498,
-    1.6605,
-    0.7927
+    0.0922,
+    0.6608,
+    7.1666,
+    1.6564,
+    1.6509,
+    1.6619,
+    0.7853
    ],
    [
     663136.0,
-    0.2451,
-    0.8128,
-    3.3165,
-    1.4167,
-    1.4133,
-    1.4201,
-    0.7073
+    0.2523,
+    0.8031,
+    3.1829,
+    1.423,
+    1.4194,
+    1.4266,
+    0.6989
    ],
    [
     821623.0,
-    0.1856,
-    0.592,
-    3.19,
-    1.2239,
-    1.221,
-    1.2268,
-    0.6349
+    0.2069,
+    0.5899,
+    2.8512,
+    1.2052,
+    1.2023,
+    1.208,
+    0.6178
    ]
   ]
  },
@@ -3475,24 +4273,24 @@
   ],
   "data": [
    [
-    0.0892,
-    0.2451,
-    0.1856
+    0.0922,
+    0.2523,
+    0.2069
    ],
    [
-    0.1726,
-    0.3255,
-    0.1725
+    0.1878,
+    0.3437,
+    0.163
    ],
    [
-    0.3625,
-    0.5598,
-    0.3334
+    0.3356,
+    0.5225,
+    0.3068
    ],
    [
-    0.6685,
-    0.8128,
-    0.592
+    0.6608,
+    0.8031,
+    0.5899
    ]
   ]
  },
@@ -3512,32 +4310,32 @@
   ],
   "data": [
    [
-    0.13,
-    0.0252,
-    0.0286,
-    0.0332,
-    0.0363
+    0.1484,
+    0.0284,
+    0.0314,
+    0.0368,
+    0.0406
    ],
    [
-    0.0844,
-    0.0334,
-    0.0424,
-    0.0512,
-    0.0506
+    0.071,
+    0.0329,
+    0.0434,
+    0.0515,
+    0.0497
    ],
    [
-    0.1438,
-    0.0902,
-    0.1139,
-    0.1218,
-    0.1159
+    0.1252,
+    0.0837,
+    0.1071,
+    0.114,
+    0.1085
    ],
    [
-    0.2928,
-    0.2747,
+    0.2974,
+    0.2771,
     0.3034,
-    0.2947,
-    0.2852
+    0.2954,
+    0.2865
    ]
   ]
  },
@@ -3567,72 +4365,72 @@
   ],
   "data": [
    [
-    0.2513,
-    0.3995,
-    0.3584,
-    0.3124,
-    0.2897,
-    0.2905,
-    0.2767,
-    0.2964,
-    0.2824,
-    0.3071,
-    0.3686,
-    0.2888,
-    0.2586,
-    0.3223,
-    0.3826
+    0.246,
+    0.3676,
+    0.3192,
+    0.3079,
+    0.2619,
+    0.2664,
+    0.2684,
+    0.2958,
+    0.2805,
+    0.2632,
+    0.3437,
+    0.2787,
+    0.2339,
+    0.318,
+    0.3429
    ],
    [
-    0.5068,
-    0.5651,
-    0.5938,
-    0.5781,
-    0.4823,
-    0.5444,
-    0.4981,
-    0.5329,
-    0.4518,
-    0.5263,
-    0.4323,
-    0.5169,
-    0.4963,
-    0.5024,
-    0.5016
+    0.403,
+    0.451,
+    0.4799,
+    0.4456,
+    0.4091,
+    0.4204,
+    0.3967,
+    0.3831,
+    0.3481,
+    0.4402,
+    0.3742,
+    0.3647,
+    0.3866,
+    0.3787,
+    0.4142
    ],
    [
-    0.9984,
-    0.9742,
-    0.8834,
-    0.8525,
-    0.8927,
-    0.842,
-    0.7939,
-    0.8475,
-    0.8726,
-    0.8563,
-    0.8681,
-    0.8536,
-    0.8582,
-    0.8374,
-    0.8959
+    0.8698,
+    0.8875,
+    0.8612,
+    0.8115,
+    0.8266,
+    0.811,
+    0.7539,
+    0.8117,
+    0.7998,
+    0.7949,
+    0.7887,
+    0.8326,
+    0.8004,
+    0.7975,
+    0.8236
    ],
    [
-    1.0918,
-    1.0872,
-    1.1572,
-    1.0905,
-    1.1627,
-    1.1299,
-    1.1648,
-    1.1906,
-    1.0357,
-    1.1685,
-    1.1171,
-    1.0306,
-    1.0853,
-    1.138,
-    1.0291
+    1.4475,
+    1.4138,
+    1.3774,
+    1.3328,
+    1.3917,
+    1.3646,
+    1.3684,
+    1.4554,
+    1.3041,
+    1.4103,
+    1.3562,
+    1.2899,
+    1.3417,
+    1.3812,
+    1.3072
    ]
   ]
  },
@@ -3653,28 +4451,28 @@
   ],
   "data": [
    [
-    1.3068,
-    1.3026,
-    1.3111,
-    159.9282
+    1.3157,
+    1.3109,
+    1.3204,
+    149.762
    ],
    [
-    1.0853,
-    1.0811,
-    1.0895,
-    41.4779
+    1.0732,
+    1.0691,
+    1.0773,
+    36.1834
    ],
    [
-    0.5684,
-    0.5607,
-    0.5763,
-    -80.2795
+    0.5048,
+    0.4973,
+    0.5124,
+    -89.4663
    ],
    [
-    1.2105,
-    1.1959,
-    1.2252,
-    30.9249
+    1.2494,
+    1.2345,
+    1.2645,
+    36.439
    ]
   ]
  },
@@ -3693,41 +4491,39 @@
   ],
   "data": [
    [
-    1.2888,
-    1.2705,
-    1.3075,
-    34.6046
+    1.3701,
+    1.3507,
+    1.3898,
+    43.2342
    ],
    [
-    1.0425,
-    1.0317,
-    1.0533,
-    7.8764
+    1.0516,
+    1.0408,
+    1.0626,
+    9.4937
    ],
    [
-    0.6548,
-    0.6179,
-    0.6939,
-    -14.3064
+    0.5597,
+    0.5274,
+    0.5939,
+    -19.1633
    ],
    [
-    3.6872,
-    3.5853,
-    3.7919,
-    91.2802
+    3.5495,
+    3.4512,
+    3.6505,
+    88.4769
    ]
   ]
  },
  "es_migration_q4_2024": {
   "columns": [
-   "Dormant",
    "Cooling",
    "Warm",
    "Active",
    "Champion"
   ],
   "index": [
-   "Dormant",
    "Cooling",
    "Warm",
    "Active",
@@ -3735,43 +4531,32 @@
   ],
   "data": [
    [
-    0.5107,
-    0.1793,
-    0.1962,
-    0.0919,
-    0.0219
+    0.5736,
+    0.2368,
+    0.1309,
+    0.0248
    ],
    [
-    0.0339,
-    0.5502,
-    0.2596,
-    0.1254,
-    0.0309
+    0.4631,
+    0.2433,
+    0.2271,
+    0.0665
    ],
    [
-    0.0,
-    0.4333,
-    0.2726,
-    0.235,
-    0.0591
+    0.2526,
+    0.1999,
+    0.3556,
+    0.192
    ],
    [
-    0.0,
-    0.156,
-    0.2304,
-    0.4073,
-    0.2062
-   ],
-   [
-    0.0,
-    0.0008,
-    0.1017,
-    0.2713,
-    0.6262
+    0.0045,
+    0.1058,
+    0.2593,
+    0.6304
    ]
   ]
  },
- "es_champion_stay_high": 0.897525878293601,
+ "es_champion_stay_high": 0.889739932394146,
  "segment_profile": {
   "columns": [
    "customers",
@@ -3800,80 +4585,80 @@
   ],
   "data": [
    [
-    387780,
-    76.1539,
-    44.0801,
-    0.108,
-    10000000.0,
-    0.8948,
-    0.8948,
-    0.0271,
-    0.1133,
-    0.0781,
-    0.8131,
-    0.3219,
-    0.48,
-    0.3829,
-    0.0106,
-    0.1479,
-    0.3876
+    510843,
+    70.95,
+    39.0787,
+    0.1092,
+    7000000.0,
+    0.9025,
+    0.9025,
+    0.0234,
+    0.1066,
+    0.0765,
+    0.7827,
+    0.2537,
+    0.3633,
+    0.2834,
+    0.0117,
+    0.1308,
+    0.5106
    ],
    [
-    139184,
-    73.2771,
-    21.6957,
-    0.0522,
+    129124,
+    72.7896,
+    20.0819,
+    0.0426,
     10000000.0,
-    0.4868,
-    0.4868,
-    0.0054,
-    0.0659,
-    0.0861,
-    0.3193,
-    0.2156,
-    0.9197,
-    0.7336,
-    0.0066,
-    0.0982,
-    0.1391
+    0.3937,
+    0.3937,
+    0.0056,
+    0.0662,
+    0.0888,
+    0.282,
+    0.2384,
+    0.9632,
+    0.7675,
+    0.0069,
+    0.1027,
+    0.1291
    ],
    [
-    291144,
-    44.3829,
-    34.7569,
-    0.0733,
+    210773,
+    38.0936,
+    30.1084,
+    0.0435,
     2000000.0,
-    0.669,
-    0.669,
-    0.0143,
-    0.1009,
-    0.0692,
-    0.6568,
-    0.244,
-    0.3643,
-    0.226,
-    0.0197,
-    0.12,
-    0.291
+    0.4632,
+    0.4632,
+    0.0138,
+    0.1237,
+    0.0688,
+    0.6782,
+    0.2886,
+    0.4581,
+    0.2582,
+    0.0212,
+    0.145,
+    0.2107
    ],
    [
-    182420,
-    44.5447,
-    24.2027,
+    149788,
+    47.42,
+    18.1114,
     0.0,
-    11922000.0,
+    11199000.0,
     0.0,
     0.0,
-    0.0032,
-    0.138,
-    0.0756,
-    0.72,
-    0.1826,
-    0.4058,
-    0.1462,
-    0.0492,
-    0.1449,
-    0.1823
+    0.0029,
+    0.1264,
+    0.0783,
+    0.6864,
+    0.1843,
+    0.4169,
+    0.1585,
+    0.0481,
+    0.1366,
+    0.1497
    ]
   ]
  },
@@ -3903,171 +4688,213 @@
    "Loyal Core",
    "Sleeping Prime",
    "Cautious Growers",
+   "Stretched Seekers",
    "Credit-Hungry Stressed",
    "Silent Risk",
    "New-to-Credit Explorers",
+   "Credit-Hungry Newcomers",
    "Dormant Unknowns"
   ],
   "data": [
    [
     "GROW",
-    210021,
-    76.5988,
-    52.8931,
-    0.1224,
+    208760,
+    76.0865,
+    49.7974,
+    0.1229,
     10000000.0,
-    0.9384,
-    0.9384,
-    0.0391,
-    0.1349,
-    0.0772,
-    0.9722,
-    0.4164,
-    0.4994,
-    0.397,
-    0.0118,
-    0.1643,
-    0.2099
+    0.9563,
+    0.9563,
+    0.0383,
+    0.1377,
+    0.0769,
+    1.0454,
+    0.3918,
+    0.4683,
+    0.3722,
+    0.012,
+    0.163,
+    0.2086
    ],
    [
     "GROW",
-    177759,
-    75.6283,
-    33.6676,
-    0.0909,
-    8000000.0,
-    0.8433,
-    0.8433,
-    0.0129,
-    0.0761,
-    0.0799,
-    0.4851,
-    0.2019,
-    0.4553,
-    0.3651,
-    0.0092,
-    0.1191,
-    0.1777
+    189080,
+    76.419,
+    30.3336,
+    0.095,
+    9000000.0,
+    0.8688,
+    0.8688,
+    0.0135,
+    0.076,
+    0.0796,
+    0.3955,
+    0.1806,
+    0.3971,
+    0.3208,
+    0.0087,
+    0.1165,
+    0.189
    ],
    [
     "REACTIVATE",
-    139184,
-    73.2771,
-    21.6957,
-    0.0522,
+    129124,
+    72.7896,
+    20.0819,
+    0.0426,
     10000000.0,
-    0.4868,
-    0.4868,
-    0.0054,
-    0.0659,
-    0.0861,
-    0.3193,
-    0.2156,
-    0.9197,
-    0.7336,
-    0.0066,
-    0.0982,
-    0.1391
+    0.3937,
+    0.3937,
+    0.0056,
+    0.0662,
+    0.0888,
+    0.282,
+    0.2384,
+    0.9632,
+    0.7675,
+    0.0069,
+    0.1027,
+    0.1291
    ],
    [
-    "PROTECT",
-    124676,
-    50.9533,
-    41.7077,
-    0.099,
+    "GROW",
+    113003,
+    52.31,
+    33.9095,
+    0.1078,
     2000000.0,
-    0.7824,
-    0.7824,
-    0.0189,
-    0.1071,
+    0.8597,
+    0.8597,
+    0.0125,
+    0.0779,
     0.0696,
-    0.7689,
-    0.2448,
-    0.2833,
-    0.1945,
-    0.0192,
-    0.1132,
-    0.1246
+    0.6381,
+    0.1627,
+    0.215,
+    0.1503,
+    0.0196,
+    0.0882,
+    0.1129
    ],
    [
     "PROTECT",
-    44822,
-    20.2564,
-    50.6558,
-    0.0609,
+    25077,
+    48.251,
+    53.819,
+    0.0691,
+    5000000.0,
+    0.7813,
+    0.7813,
+    0.0408,
+    0.1784,
+    0.0642,
+    0.9519,
+    0.367,
+    0.343,
+    0.2354,
+    0.0194,
+    0.1422,
+    0.0251
+   ],
+   [
+    "PROTECT",
+    43257,
+    20.4546,
+    47.5688,
+    0.0645,
     2000000.0,
-    0.6939,
-    0.6939,
-    0.028,
-    0.1764,
-    0.0625,
-    0.8653,
-    0.3935,
-    0.3607,
-    0.1986,
+    0.7308,
+    0.7308,
+    0.0288,
+    0.1765,
+    0.0622,
+    0.8651,
+    0.4169,
+    0.3692,
+    0.208,
     0.0439,
-    0.1639,
-    0.0448
+    0.1624,
+    0.0432
    ],
    [
     "PROTECT",
-    121646,
-    46.5387,
-    21.7748,
-    0.0516,
+    109807,
+    44.8128,
+    19.7227,
+    0.0424,
     2000000.0,
-    0.5437,
-    0.5437,
-    0.0046,
-    0.053,
-    0.0733,
-    0.281,
-    0.1285,
-    0.53,
-    0.3101,
-    0.0151,
-    0.0936,
-    0.1216
+    0.4228,
+    0.4228,
+    0.0045,
+    0.0566,
+    0.079,
+    0.2698,
+    0.1559,
+    0.6615,
+    0.378,
+    0.0154,
+    0.1187,
+    0.1097
    ],
    [
     "BUILD",
-    50767,
-    39.4425,
-    34.6355,
+    23787,
+    45.7151,
+    32.346,
     0.0,
     21203000.0,
     0.0,
     0.0,
-    0.0054,
-    0.206,
-    0.0691,
-    1.319,
-    0.2411,
-    0.2553,
-    0.0616,
-    0.1103,
-    0.1923,
-    0.0507
+    0.0063,
+    0.2147,
+    0.0706,
+    1.6972,
+    0.3196,
+    0.274,
+    0.0787,
+    0.1177,
+    0.1808,
+    0.0238
+   ],
+   [
+    "PROTECT",
+    32632,
+    31.06,
+    23.6896,
+    0.0,
+    14000000.0,
+    0.0,
+    0.0,
+    0.0044,
+    0.1922,
+    0.0651,
+    0.8532,
+    0.1724,
+    0.3412,
+    0.0744,
+    0.0695,
+    0.2076,
+    0.0326
    ],
    [
     "BUILD",
-    131653,
-    46.5122,
-    20.1797,
+    126001,
+    47.7419,
+    15.4241,
     0.0,
     2000000.0,
     0.0,
     0.0,
     0.0023,
-    0.1079,
-    0.0791,
-    0.3986,
-    0.1619,
-    0.459,
-    0.1761,
-    0.045,
-    0.134,
-    0.1316
+    0.105,
+    0.0806,
+    0.3817,
+    0.1613,
+    0.4413,
+    0.1722,
+    0.0442,
+    0.1317,
+    0.1259
    ]
   ]
  },
@@ -4085,24 +4912,24 @@
   ],
   "data": [
    [
-    0.2099,
-    0.1777,
-    0.1391
+    0.2086,
+    0.189,
+    0.1291
    ],
    [
-    0.0541,
-    0.0705,
-    0.1047
+    0.0526,
+    0.0854,
+    0.0911
    ],
    [
-    0.0314,
-    0.0134,
-    0.0169
+    0.0299,
+    0.0133,
+    0.0187
    ],
    [
-    0.0105,
-    0.0403,
-    0.1316
+    0.0086,
+    0.0279,
+    0.1459
    ]
   ]
  },
@@ -4112,11 +4939,12 @@
   10
  ],
  "nba_mix": {
-  "PROTECT · No credit push – support & early warning": 0.2665,
-  "GROW · Pre-approved upsell / cross-sell": 0.2244,
-  "BUILD · Starter product when they come": 0.1817,
+  "GROW · Pre-approved upsell / cross-sell": 0.2224,
+  "PROTECT · No credit push – support & early warning": 0.1938,
   "T3 · Maturity-window re-loan": 0.1586,
-  "REACTIVATE · Digital win-back (no telesales)": 0.089,
+  "BUILD · Starter product when they come": 0.1493,
+  "GROW · Right-sized offer (structured)": 0.1052,
+  "REACTIVATE · Digital win-back (no telesales)": 0.091,
   "T2 · Onboard & activate (60-day cool-off)": 0.0637,
   "T1 · Collections care & hardship plan": 0.016
  },
@@ -4127,11 +4955,12 @@
   "T1 Live collections": 0.016
  },
  "nba_channel_mix": {
-  "SMS / Zalo OA": 0.4175,
-  "Telesales call (best hours 8h, 9h, 10h)": 0.2569,
-  "In-app / partner store (no outbound calls)": 0.1817,
-  "SMS / Zalo OA + in-app (no calls)": 0.089,
-  "In-app (GMA) push + banner": 0.0387,
+  "SMS / Zalo OA": 0.3559,
+  "Telesales call (best hours 8h, 9h, 10h)": 0.2551,
+  "In-app / partner store (no outbound calls)": 0.1493,
+  "In-app / SMS (no telesales push)": 0.1052,
+  "SMS / Zalo OA + in-app (no calls)": 0.091,
+  "In-app (GMA) push + banner": 0.0274,
   "Collections agent call + SMS": 0.016,
   "In-app / SMS only (opted out of calls)": 0.0001
  },
@@ -4139,6 +4968,7 @@
   "columns": [
    "BUILD · Starter product when they come",
    "GROW · Pre-approved upsell / cross-sell",
+   "GROW · Right-sized offer (structured)",
    "PROTECT · No credit push – support & early warning",
    "REACTIVATE · Digital win-back (no telesales)",
    "T1 · Collections care & hardship plan",
@@ -4157,71 +4987,83 @@
     0.0,
     0.0,
     0.0,
+    0.0,
     0.003,
     0.0,
     0.0
    ],
    [
     0.0,
-    0.579,
+    0.436,
+    0.206,
     0.0,
     0.0,
-    0.027,
-    0.112,
-    0.282
+    0.023,
+    0.097,
+    0.237
    ],
    [
     0.0,
     0.0,
-    0.916,
+    0.0,
+    0.92,
     0.0,
     0.014,
-    0.07,
+    0.066,
     0.0
    ],
    [
     0.0,
     0.0,
     0.0,
-    0.64,
-    0.005,
     0.0,
-    0.355
+    0.705,
+    0.006,
+    0.0,
+    0.289
    ]
   ]
  },
  "explanation_examples": {
   "Prime Champions": [
-   "GROW | FHS 95 (Resilient; + Loans successfully taken (track record): 5+; − Past write-off / sold debt: 0) | ES 43 (Active; last self-initiated activity 143d ago) → T3 · Maturity-window re-loan: healthy and a loan is about to mature – the moment repeat demand peaks",
-   "GROW | FHS 95 (Resilient; + Loans successfully taken (track record): 5+; − Past write-off / sold debt: 0) | ES 43 (Active; last self-initiated activity 143d ago) → T3 · Maturity-window re-loan: healthy and a loan is about to mature – the moment repeat demand peaks"
+   "GROW | FHS 95 (Resilient; + Loans successfully taken (track record): 5+; − No material negative factor) | ES 41 (Active; last self-initiated activity 143d ago) → T3 · Maturity-window re-loan: healthy and a loan is about to mature – the moment repeat demand peaks",
+   "GROW | FHS 95 (Resilient; + Loans successfully taken (track record): 5+; − No material negative factor) | ES 41 (Active; last self-initiated activity 143d ago) → T3 · Maturity-window re-loan: healthy and a loan is about to mature – the moment repeat demand peaks"
   ],
   "Loyal Core": [
-   "GROW | FHS 67 (Stable; + Past late payments: 0; − Applications last 90d: 1) | ES 34 (Warm; last self-initiated activity 60d ago) → T3 · Maturity-window re-loan: healthy and a loan is about to mature – the moment repeat demand peaks",
-   "GROW | FHS 67 (Stable; + Past late payments: 0; − Applications last 90d: 1) | ES 34 (Warm; last self-initiated activity 60d ago) → T3 · Maturity-window re-loan: healthy and a loan is about to mature – the moment repeat demand peaks"
+   "GROW | FHS 67 (Stable; + Past late payments: 0; − Applications last 90d: 1) | ES 35 (Warm; last self-initiated activity 60d ago) → T3 · Maturity-window re-loan: healthy and a loan is about to mature – the moment repeat demand peaks",
+   "GROW | FHS 67 (Stable; + Past late payments: 0; − Applications last 90d: 1) | ES 35 (Warm; last self-initiated activity 60d ago) → T3 · Maturity-window re-loan: healthy and a loan is about to mature – the moment repeat demand peaks"
   ],
   "Sleeping Prime": [
-   "REACTIVATE | FHS 74 (Resilient; + Past late payments: 0; − Loans successfully taken (track record): 3-4) | ES 23 (Cooling; last self-initiated activity 162d ago) → REACTIVATE · Digital win-back (no telesales): healthy but silent – good risk, rarely answers calls; win back through a cheap digital channel",
-   "REACTIVATE | FHS 95 (Resilient; + Loans successfully taken (track record): 5+; − Past write-off / sold debt: 0) | ES 24 (Cooling; last self-initiated activity 149d ago) → T3 · Maturity-window re-loan: healthy and a loan is about to mature – the moment repeat demand peaks"
+   "REACTIVATE | FHS 74 (Resilient; + Past late payments: 0; − No material negative factor) | ES 23 (Cooling; last self-initiated activity 162d ago) → REACTIVATE · Digital win-back (no telesales): healthy but silent – good risk, rarely answers calls; win back through a cheap digital channel",
+   "REACTIVATE | FHS 95 (Resilient; + Loans successfully taken (track record): 5+; − No material negative factor) | ES 24 (Cooling; last self-initiated activity 149d ago) → T3 · Maturity-window re-loan: healthy and a loan is about to mature – the moment repeat demand peaks"
   ],
   "Cautious Growers": [
-   "PROTECT | FHS 49 (Vulnerable; + Loans successfully taken (track record): 5+; − Rejections last 12m: 2+) | ES 66 (Champion; last self-initiated activity 41d ago) → T2 · Onboard & activate (60-day cool-off): just took a loan – a new offer now adds risk and rarely converts; activation builds engagement",
-   "PROTECT | FHS 49 (Vulnerable; + Loans successfully taken (track record): 5+; − Rejections last 12m: 2+) | ES 66 (Champion; last self-initiated activity 41d ago) → T2 · Onboard & activate (60-day cool-off): just took a loan – a new offer now adds risk and rarely converts; activation builds engagement"
+   "GROW | FHS 54 (Vulnerable; + Past late payments: 0; − Loans successfully taken (track record): 1) | ES 40 (Active; last self-initiated activity 128d ago) → GROW · Right-sized offer (structured): clean but short history and engaged – grow with a smaller, shorter, safer loan (C1: grow with structure)",
+   "GROW | FHS 52 (Vulnerable; + Past late payments: 0; − Loans successfully taken (track record): 2) | ES 37 (Warm; last self-initiated activity 42d ago) → T2 · Onboard & activate (60-day cool-off): just took a loan – a new offer now adds risk and rarely converts; activation builds engagement"
+  ],
+  "Stretched Seekers": [
+   "PROTECT | FHS 49 (Vulnerable; + Loans successfully taken (track record): 5+; − Rejections last 12m: 2+) | ES 65 (Champion; last self-initiated activity 41d ago) → T2 · Onboard & activate (60-day cool-off): just took a loan – a new offer now adds risk and rarely converts; activation builds engagement",
+   "PROTECT | FHS 49 (Vulnerable; + Loans successfully taken (track record): 5+; − Rejections last 12m: 2+) | ES 65 (Champion; last self-initiated activity 41d ago) → T2 · Onboard & activate (60-day cool-off): just took a loan – a new offer now adds risk and rarely converts; activation builds engagement"
   ],
   "Credit-Hungry Stressed": [
-   "PROTECT | FHS 38 (Distressed; + Past late payments: 0; − Rejections last 12m: 2+) | ES 37 (Warm; last self-initiated activity 13d ago) → PROTECT · No credit push – support & early warning: fragile and actively hunting credit – more credit would deepen stress",
-   "PROTECT | FHS 0 (Distressed; + Loans successfully taken (track record): 5+; − Past late payments: 1) | ES 62 (Champion; last self-initiated activity 10d ago) → T2 · Onboard & activate (60-day cool-off): just took a loan – a new offer now adds risk and rarely converts; activation builds engagement"
+   "PROTECT | FHS 38 (Distressed; + Past late payments: 0; − Rejections last 12m: 2+) | ES 29 (Warm; last self-initiated activity 13d ago) → PROTECT · No credit push – support & early warning: fragile and actively hunting credit – more credit would deepen stress",
+   "PROTECT | FHS 0 (Distressed; + Loans successfully taken (track record): 5+; − Past late payments: 1) | ES 64 (Champion; last self-initiated activity 10d ago) → T2 · Onboard & activate (60-day cool-off): just took a loan – a new offer now adds risk and rarely converts; activation builds engagement"
   ],
   "Silent Risk": [
-   "PROTECT | FHS 0 (Distressed; + Relationship tenure: 5y+; − Past late payments: 1) | ES 21 (Cooling; last self-initiated activity 130d ago) → PROTECT · No credit push – support & early warning: fragile and silent – prevent arrears, do not sell",
-   "PROTECT | FHS 52 (Vulnerable; + Past late payments: 0; − Loans successfully taken (track record): 1) | ES 22 (Cooling; last self-initiated activity 140d ago) → T1 · Collections care & hardship plan: already in collections – protecting the customer and the book comes first"
+   "PROTECT | FHS 0 (Distressed; + Relationship tenure: 5y+; − Past late payments: 1) | ES 16 (Cooling; last self-initiated activity 130d ago) → PROTECT · No credit push – support & early warning: fragile and silent – prevent arrears, do not sell",
+   "PROTECT | FHS 52 (Vulnerable; + Past late payments: 0; − Loans successfully taken (track record): 1) | ES 16 (Cooling; last self-initiated activity 140d ago) → T1 · Collections care & hardship plan: already in collections – protecting the customer and the book comes first"
   ],
   "New-to-Credit Explorers": [
-   "BUILD | FHS 40 (Thin-file; + No negative record; − No credit history with us (thin file)) | ES 38 (Warm; last self-initiated activity 47d ago) → BUILD · Starter product when they come: no credit history yet – a small first product builds the repayment record we need",
-   "BUILD | FHS 46 (Thin-file; + No negative record; − No credit history with us (thin file)) | ES 28 (Warm; last self-initiated activity 130d ago) → T1 · Collections care & hardship plan: already in collections – protecting the customer and the book comes first"
+   "BUILD | FHS 40 (Thin-file; + No negative record; − No credit history with us (thin file)) | ES 35 (Warm; last self-initiated activity 47d ago) → BUILD · Starter product when they come: no credit history yet – a small first product builds the repayment record we need",
+   "BUILD | FHS 46 (Thin-file; + No negative record; − No credit history with us (thin file)) | ES 25 (Warm; last self-initiated activity 130d ago) → T1 · Collections care & hardship plan: already in collections – protecting the customer and the book comes first"
+  ],
+  "Credit-Hungry Newcomers": [
+   "PROTECT | FHS 34 (Thin-file; + No negative record; − No credit history with us (thin file)) | ES 21 (Cooling; last self-initiated activity 114d ago) → PROTECT · No credit push – support & early warning: no history yet and already hunting credit hard – the riskiest first loans; verify before lending",
+   "PROTECT | FHS 34 (Thin-file; + No negative record; − No credit history with us (thin file)) | ES 17 (Cooling; last self-initiated activity 152d ago) → T1 · Collections care & hardship plan: already in collections – protecting the customer and the book comes first"
   ],
   "Dormant Unknowns": [
-   "BUILD | FHS 46 (Thin-file; + No negative record; − No credit history with us (thin file)) | ES 18 (Cooling; last self-initiated activity 175d ago) → BUILD · Starter product when they come: no credit history yet – a small first product builds the repayment record we need",
-   "BUILD | FHS 34 (Thin-file; + No negative record; − No credit history with us (thin file)) | ES 24 (Cooling; last self-initiated activity 152d ago) → T1 · Collections care & hardship plan: already in collections – protecting the customer and the book comes first"
+   "BUILD | FHS 46 (Thin-file; + No negative record; − No credit history with us (thin file)) | ES 13 (Cooling; last self-initiated activity 175d ago) → BUILD · Starter product when they come: no credit history yet – a small first product builds the repayment record we need",
+   "BUILD | FHS 55 (Thin-file; + No negative record; − No credit history with us (thin file)) | ES 17 (Cooling; last self-initiated activity 144d ago) → T1 · Collections care & hardship plan: already in collections – protecting the customer and the book comes first"
   ]
  },
  "call_allocation_forward": {
@@ -4242,40 +5084,40 @@
   ],
   "data": [
    [
-    1684143,
-    0.07807,
-    0.00813,
-    0.00105,
-    0.61577,
-    0.38758,
-    81.30545
+    2038313,
+    0.07652,
+    0.00783,
+    0.001,
+    0.74527,
+    0.51057,
+    78.2657
    ],
    [
-    223022,
-    0.08614,
-    0.00319,
-    0.00021,
-    0.08154,
-    0.13911,
-    31.9251
+    199672,
+    0.08876,
+    0.00282,
+    0.00024,
+    0.07301,
+    0.12906,
+    28.19624
    ],
    [
-    748812,
-    0.0692,
-    0.00657,
-    0.00083,
-    0.27379,
-    0.29099,
-    65.67737
+    433932,
+    0.06877,
+    0.00678,
+    0.00084,
+    0.15866,
+    0.21066,
+    67.82169
    ],
    [
-    79025,
-    0.07563,
-    0.0072,
-    0.00073,
-    0.02889,
-    0.18232,
-    72.00253
+    63085,
+    0.07831,
+    0.00686,
+    0.0007,
+    0.02307,
+    0.14971,
+    68.63755
    ]
   ]
  },
@@ -4294,92 +5136,112 @@
    "Loyal Core",
    "Sleeping Prime",
    "Cautious Growers",
+   "Stretched Seekers",
    "Credit-Hungry Stressed",
    "Silent Risk",
    "New-to-Credit Explorers",
+   "Credit-Hungry Newcomers",
    "Dormant Unknowns"
   ],
   "data": [
    [
-    1133765,
-    0.07718,
-    0.00972,
-    0.00129,
-    0.41454,
-    0.20991,
-    97.22473
+    1090771,
+    0.07689,
+    0.01045,
+    0.00137,
+    0.39882,
+    0.20865,
+    104.54073
    ],
    [
-    550378,
-    0.07989,
-    0.00485,
-    0.00053,
-    0.20123,
-    0.17767,
-    48.51211
+    616722,
+    0.0796,
+    0.00395,
+    0.00043,
+    0.22549,
+    0.18898,
+    39.5478
    ],
    [
-    223022,
-    0.08614,
-    0.00319,
-    0.00021,
-    0.08154,
-    0.13911,
-    31.9251
+    199672,
+    0.08876,
+    0.00282,
+    0.00024,
+    0.07301,
+    0.12906,
+    28.19624
    ],
    [
-    403560,
-    0.06958,
-    0.00769,
-    0.00099,
-    0.14755,
-    0.12461,
-    76.89067
+    330820,
+    0.06957,
+    0.00638,
+    0.00083,
+    0.12096,
+    0.11294,
+    63.81114
    ],
    [
-    144572,
-    0.06249,
+    120183,
+    0.06418,
+    0.00952,
+    0.00114,
+    0.04394,
+    0.02506,
+    95.18817
+   ],
+   [
+    144372,
+    0.06218,
     0.00865,
     0.00116,
-    0.05286,
-    0.0448,
-    86.53128
+    0.05279,
+    0.04323,
+    86.51262
    ],
    [
-    200680,
-    0.07329,
-    0.00281,
-    0.00028,
-    0.07337,
-    0.12158,
-    28.10444
+    153437,
+    0.07896,
+    0.0027,
+    0.00029,
+    0.0561,
+    0.10975,
+    26.98176
    ],
    [
-    27596,
-    0.06914,
-    0.01319,
-    0.00134,
-    0.01009,
-    0.05074,
-    131.90317
+    14612,
+    0.07063,
+    0.01697,
+    0.00157,
+    0.00534,
+    0.02377,
+    169.72351
    ],
    [
-    51429,
-    0.07912,
-    0.00399,
-    0.00041,
-    0.0188,
-    0.13158,
-    39.86078
+    15940,
+    0.06506,
+    0.00853,
+    0.00088,
+    0.00583,
+    0.03261,
+    85.31995
+   ],
+   [
+    48473,
+    0.08062,
+    0.00382,
+    0.00043,
+    0.01772,
+    0.12593,
+    38.16558
    ]
   ]
  },
  "call_gains_simulation": {
   "calls_cut_share": 0.3,
-  "positives_kept_if_cut_30pct_lowest_ES": 0.8412427106374422,
-  "positives_in_top20pct_calls": 0.30705811381459885,
-  "productivity_per_call_gain_if_cut": 0.20177530091063178,
-  "priority_score_top20": 0.20319726523225418
+  "positives_kept_if_cut_30pct_lowest_ES": 0.8689925598230445,
+  "positives_in_top20pct_calls": 0.37899658154031773,
+  "productivity_per_call_gain_if_cut": 0.24141794260434923,
+  "priority_score_top20": 0.224813995576111
  },
  "opportunity_map": {
   "columns": [
@@ -4402,70 +5264,76 @@
   ],
   "data": [
    [
-    387780,
-    333807,
-    127608,
-    8800000.0,
+    510843,
+    449112,
+    176287,
+    5500000.0,
     6688500.0,
-    0.8131,
-    0.0106,
-    0.3219,
-    1684143,
-    0.6158
+    0.7827,
+    0.0117,
+    0.2537,
+    2038313,
+    0.7453
    ],
    [
-    139184,
-    138430,
-    49644,
-    9000000.0,
+    129124,
+    128405,
+    37569,
+    9600000.0,
     6688500.0,
-    0.3193,
-    0.0066,
-    0.2156,
-    223022,
-    0.0815
+    0.282,
+    0.0069,
+    0.2384,
+    199672,
+    0.073
    ],
    [
-    291144,
+    210773,
     0,
-    85726,
+    49122,
     null,
     6688500.0,
-    0.6568,
-    0.0197,
-    0.244,
-    748812,
-    0.2738
+    0.6782,
+    0.0212,
+    0.2886,
+    433932,
+    0.1587
    ],
    [
-    182420,
-    181842,
+    149788,
+    149355,
     0,
-    null,
+    900000.0,
     6688500.0,
-    0.72,
-    0.0492,
-    0.1826,
-    79025,
-    0.0289
+    0.6864,
+    0.0481,
+    0.1843,
+    63085,
+    0.0231
    ]
   ]
  },
  "value_levers": {
   "L1_calls_saved_cut30pct_lowES": 820500.6,
-  "L1_positives_kept": 0.8412427106374422,
+  "L1_positives_kept": 0.8689925598230445,
   "L2_healthy_customers_maturing_90d": 177252,
-  "L3_protect_customers": 291144,
-  "L3_bad_rate_protect": 0.019701886900830006,
-  "L3_bad_rate_grow": 0.010603666546098347,
-  "L3_protect_vs_grow_risk_ratio": 1.858025883328006,
-  "L3_bad_loans_avoided_per_1000_paused_offers_protect": 19.701886900830004,
-  "L3_credit_hungry_customers": 44822,
-  "L3_bad_rate_credit_hungry": 0.04388051810732223,
-  "L3_sales_calls_to_protect_share": 0.2737884652369541,
-  "L4_sales_calls_to_reactivate_build_share": 0.11043757920469528,
-  "L5_growth_actions": 654079,
-  "L6_protect_actions": 282670,
+  "L7_cautious_growers_structured": 113003,
+  "L7_bad_rate_cautious_growers": 0.01955267970178647,
+  "L7_bad_rate_stretched_seekers": 0.019442492386975874,
+  "L8_credit_hungry_newcomers": 32632,
+  "L8_bad_rate_credit_hungry_newcomers": 0.06951219512195123,
+  "L8_bad_rate_new_to_credit_explorers": 0.11772486772486772,
+  "L3_protect_customers": 210773,
+  "L3_bad_rate_protect": 0.021170697511391518,
+  "L3_bad_rate_grow": 0.011744026578586468,
+  "L3_protect_vs_grow_risk_ratio": 1.8026779290497537,
+  "L3_bad_loans_avoided_per_1000_paused_offers_protect": 21.17069751139152,
+  "L3_credit_hungry_customers": 43257,
+  "L3_bad_rate_credit_hungry": 0.04394993045897079,
+  "L3_sales_calls_to_protect_share": 0.1586587505237656,
+  "L4_sales_calls_to_reactivate_build_share": 0.09607195899673932,
+  "L5_growth_actions": 726872,
+  "L6_protect_actions": 209877,
   "forward_sales_attempts_total": 2735002.0
  },
  "I1_by_source": {
@@ -4867,5 +5735,7 @@
   "connect_rate_attempt6plus": 0.025564834063477523
  },
  "output_rows": 1000528,
- "runtime_minutes": 10.3
+ "runtime_minutes": 9.4,
+ "run_id": "2026-10-18 01:16:47",
+ "max_offer_in_score": false
 }

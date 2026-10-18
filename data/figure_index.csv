@@ -13,29 +13,35 @@ file,caption,source
 06_fhs_weights.png,"Effective weights of the FHS scorecard: points range of each pillar/factor, derived from logistic regression on WoE.",BI10 dataset; team analysis
 06_fhs_calibration.png,Observed bad rate (late ≥2 instalments or written-off/sold) per FHS band vs the rate implied by the score scale.,BI10 dataset; team analysis
 06_fhs_benchmark.png,Out-of-time (loans applied Sep-2024 → Feb-2025) discrimination of early delinquency.,BI10 dataset; team analysis
-06_fhs_vs_company_limit.png,"Snapshot 2025-06-05, credit-file customers. MAX_OFFER = latest pre-approved limit from LEADS; it is excluded from the FHS (decision D11).",BI10 dataset; team analysis
+06_fhs_vs_company_limit.png,"Scored as of 4 Jun 2025, credit-file customers. MAX_OFFER = latest pre-approved limit from LEADS; it is excluded from the FHS (decision D11).",BI10 dataset; team analysis
+06_fhs_worked_example.png,Scored as of 4 Jun 2025. Points per factor = scorecard points of the customer's bin; FHS = 60 + sum of points (clipped 0–100).,BI10 dataset; team analysis
 06_fhs_distribution.png,FHS distribution at the production snapshot and share of customers per tier.,BI10 dataset; team analysis
-06_fhs_validation.png,Outcome rates by FHS tier. Back-test: score as-of 2025-01-01; forward: score as-of 2025-06-05 vs collection calls until 2026-08.,BI10 dataset; team analysis
-07_es_distribution.png,Engagement Score distribution and engagement levels at the snapshot (2025-06-05).,BI10 dataset; team analysis
-07_es_worked_example.png,Snapshot 2025-06-05. Each bar = weight × dimension score; the bar length equals the customer's ES.,BI10 dataset; team analysis
+06_fhs_validation.png,Outcome rates by FHS tier. Back-test: score as-of 2025-01-01; forward: scored as of 4 Jun 2025 vs collection calls until 2026-08.,BI10 dataset; team analysis
+C1_tiers.png,"Tier size, late payment on new loans (back-test) and median MAX_OFFER per tier.",BI10 dataset; team analysis
+C1_points.png,Scorecard points per bin with the observed late rate.,BI10 dataset; team analysis
+C1_example.png,Worked example: FHS of a clean first-time borrower.,BI10 dataset; team analysis
+C1_drivers.png,"Main negative reason group per tier (stress signal vs short history), all customers.",BI10 dataset; team analysis
+C1_tradeoff.png,Growth vs risk: late rate of approved out-of-time loans as the FHS cut-off moves down.,BI10 dataset; team analysis
+07_es_distribution.png,Engagement Score distribution and engagement levels at the snapshot (scored as of 4 Jun 2025).,BI10 dataset; team analysis
+07_es_worked_example.png,Scored as of 4 Jun 2025. Each bar = weight × dimension score; the bar length equals the customer's ES.,BI10 dataset; team analysis
 07_es_dimensions.png,Average dimension score per engagement level (snapshot).,BI10 dataset; team analysis
-07_es_validation.png,"Outcome rates by engagement level. Back-test ES as-of 2025-01-01 (existing customers, no call/GMA data); forward ES as-of 2025-06-05 vs calls until 2026-08 (per-call rates).",BI10 dataset; team analysis
-07_es_drivers.png,Lift of outcome rate for engagement drivers (+) and reducers (−). Back-test outcomes 2025H1 (existing customers); forward outcome per sales call after 2025-06-05.,BI10 dataset; team analysis
+07_es_validation.png,"Outcome rates by engagement level. Back-test ES as-of 2025-01-01 (existing customers, no call/GMA data); forward ES scored as of 4 Jun 2025 vs calls until 2026-08 (per-call rates).",BI10 dataset; team analysis
+07_es_drivers.png,Lift of outcome rate for engagement drivers (+) and reducers (−). Back-test outcomes 2025H1 (existing customers); forward outcome per sales call after 4 Jun 2025.,BI10 dataset; team analysis
 07_es_event_evidence.png,"Back-test: events in the 180 days before 2025-01-01, outcome = self-initiated activity 2025-01 → 2025-06 (existing customers). ""Only this signal"" isolates each event type.",BI10 dataset; team analysis
-07_es_halflife.png,AUC of the Frequency dimension computed with different half-lives. Back-test: as-of 2025-01-01 vs self-activity 2025H1; forward: as-of 2025-06-05 vs sales-call outcomes.,BI10 dataset; team analysis
+07_es_halflife.png,AUC of the Frequency dimension computed with different half-lives. Back-test: as-of 2025-01-01 vs self-activity 2025H1; forward: scored as of 4 Jun 2025 vs sales-call outcomes.,BI10 dataset; team analysis
 07_es_weight_sensitivity.png,"Same five dimensions, different weights. Black = our weights. ""Drop X"" = remove one dimension and re-normalise. Machine-learned weights = logistic regression on each outcome (forward one is in-sample).",BI10 dataset; team analysis
-07_es_dimension_card.png,Snapshot 2025-06-05. Coverage = share of customers with a real (non-default) value; overlap = Spearman correlation with Frequency; AUC forward = positive sales-call outcome after the snapshot.,BI10 dataset; team analysis
-07_es_deciles.png,"Outcome rate per ES decile. Back-test: ES as-of 2025-01-01, existing customers; forward: ES as-of 2025-06-05, per-call rates after the snapshot.",BI10 dataset; team analysis
+07_es_dimension_card.png,Scored as of 4 Jun 2025. Coverage = share of customers with a real (non-default) value; overlap = Spearman correlation with Frequency; AUC forward = positive sales-call outcome after the snapshot.,BI10 dataset; team analysis
+07_es_deciles.png,"Outcome rate per ES decile. Back-test: ES as-of 2025-01-01, existing customers; forward: ES scored as of 4 Jun 2025, per-call rates after the snapshot.",BI10 dataset; team analysis
 07_es_walkforward.png,ES rebuilt with only data available at each date (no call/app data); outcome = self-initiated activity in the following 150 days; existing customers.,BI10 dataset; team analysis
-07_es_monthly_tracking.png,Lines = engagement level at the scoring date. Left: self-initiated activity per 30-day month after 2025-01-01 (existing customers). Right: per-call positive rate per 30-day month after 2025-06-05.,BI10 dataset; team analysis
-07_es_incremental_logit.png,"Multivariable logistic regression, odds ratios with 95% CI. Back-test: existing customers, ES/FHS as-of 2025-01-01; forward: customers called after 2025-06-05.",BI10 dataset; team analysis
+07_es_monthly_tracking.png,"Lines = engagement level at the scoring date. Left: self-initiated activity per 30-day month after 2025-01-01 (existing customers). Right: per-call positive rate per 30-day month after 4 Jun 2025 (CALL dates are an association only, see §7.1b).",BI10 dataset; team analysis
+07_es_incremental_logit.png,"Multivariable logistic regression, odds ratios with 95% CI. Back-test: existing customers, ES/FHS as-of 2025-01-01; forward: customers called after 4 Jun 2025.",BI10 dataset; team analysis
 07_es_migration.png,Existing customers at both dates; rows sum to 100%. Same ES definition at both dates (no call/app data).,BI10 dataset; team analysis
-08_segment_matrix.png,"Snapshot 2025-06-05. Rows = FHS tier, columns = ES band; colour = segment, small text = detailed sub-segment kept in the output file.",BI10 dataset; team analysis
+08_segment_matrix.png,"Scored as of 4 Jun 2025. Rows = FHS tier, columns = ES band; colour = segment (split cells show the risk guard-rails D16), small text = main sub-segment kept in the output file.",BI10 dataset; team analysis
 08_segments_map.png,Customers on the FHS × ES plane (60k random sample) and segment sizes at the snapshot.,BI10 dataset; team analysis
-08_segment_evidence.png,Outcome rates per segment. Back-test: segments built as-of 2025-01-01; forward: segments as-of 2025-06-05 vs calls until 2026-08.,BI10 dataset; team analysis
-08_nba_mix.png,Share of customers per recommended action (snapshot 2025-06-05). Triggers override the segment action in the order T1 → T2 → T3.,BI10 dataset; team analysis
-08_call_gains.png,Cumulative gains of positive sales-call outcomes after 2025-06-05 when customers are ranked by their ES at the snapshot.,BI10 dataset; team analysis
-08_call_allocation.png,Forward window (2025-06-05 → 2026-08): distribution of outbound sales-call attempts and their productivity per segment.,BI10 dataset; team analysis
+08_segment_evidence.png,Outcome rates per segment. Back-test: segments built as-of 2025-01-01; forward: segments scored as of 4 Jun 2025 vs calls until 2026-08.,BI10 dataset; team analysis
+08_nba_mix.png,Share of customers per recommended action (scored as of 4 Jun 2025). Triggers override the segment action in the order T1 → T2 → T3.,BI10 dataset; team analysis
+08_call_gains.png,Cumulative gains of positive sales-call outcomes after 4 Jun 2025 when customers are ranked by their ES at the snapshot.,BI10 dataset; team analysis
+08_call_allocation.png,Forward window (4 Jun 2025 → Aug 2026): distribution of outbound sales-call attempts and their productivity per segment.,BI10 dataset; team analysis
 08_opportunity_map.png,Bubble size = customers. Dotted lines = average risk / response. Risk: back-test as-of 2025-01-01; response: forward calls 2025-06 → 2026-08.,BI10 dataset; team analysis
 09_I1_pull_vs_push.png,True conversion = a loan booked within 30 days of lead creation (LEADS joined to CONTRACT). PULL = GMA/Landing page/SOB; WARM = TLS/RTDM; PUSH = RA/SA.,BI10 dataset; team analysis
 09_I2_credit_hunger.png,"Applications 2023-03 → 2025-06; channels = APP, WEB, SA, TLS, Partner site, Store (PAST_BEHAVIOR) in the 90 days before applying.",BI10 dataset; team analysis

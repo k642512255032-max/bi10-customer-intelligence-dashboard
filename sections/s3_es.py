@@ -39,7 +39,8 @@ def render(ctx) -> None:
                t("s3.dist.how", lang), "dashboard_sample.csv", lang, bk, H)
     chart_card(c2, t("s3.level.h", lang), "",
                ch.mix_bar(mix, LEVEL_COLOR, order=ES_LEVELS),
-               "Cooling 39.2% | Warm 30.2% | Active 20.3% | Champion 10.3%",
+               " | ".join(f"{k} {v:.1%}" for k, v in
+                         mix.reindex(ES_LEVELS).dropna().items()),
                "summary_metrics.json / es_level_mix", lang, BADGE_WHOLE, H)
 
     c3, c4 = grid(2)
@@ -67,6 +68,28 @@ def render(ctx) -> None:
                ch.walkforward_bar(split_table(m, "es_walkforward")),
                "The score was rebuilt from scratch at three dates. Champions beat Cooling "
                "every time.", "summary_metrics.json / es_walkforward", lang, BADGE_WHOLE, H)
+
+    cdc = m.get("call_date_check", {})
+    if cdc and not cdc.get("call_dates_reliable", True):
+        st.warning(t("s3.limit.body", lang,
+                     real=cdc.get("share_with_application_within_14d_real", 0),
+                     shuf=cdc.get("same_share_with_shuffled_call_dates", 0)),
+                   icon=":material/warning:")
+
+    w1, w2 = grid(2)
+    with w1:
+        with st.container(border=True):
+            st.markdown(f"**{t('s3.weights.h', lang)}**")
+            st.caption(t("s3.weights.body", lang))
+            if "es_weights" in m:
+                st.dataframe(split_table(m, "es_weights").round(4),
+                             use_container_width=True)
+    with w2:
+        with st.container(border=True):
+            st.markdown(f"**{t('s3.limit.h', lang)}**")
+            st.caption(t("s3.selection.body", lang))
+            st.dataframe(split_table(m, "es_backtest_by_level").round(4),
+                         use_container_width=True)
 
     with st.expander(t("s3.selection.h", lang)):
         st.write(t("s3.selection.body", lang))

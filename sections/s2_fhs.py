@@ -39,9 +39,9 @@ def render(ctx) -> None:
                t("s2.dist.how", lang), "dashboard_sample.csv", lang, bk, H)
     chart_card(c2, t("s2.tier.h", lang), t("s2.tier.lead", lang),
                ch.mix_bar(mix, TIER_COLOR, order=FHS_TIERS),
-               "Resilient 32.1% | Vulnerable 22.9% | Stable 20.6% | Thin-file 18.2% | "
-               "Distressed 6.2%", "summary_metrics.json / fhs_tier_mix", lang,
-               BADGE_WHOLE, H)
+               " | ".join(f"{k} {v:.1%}" for k, v in
+                         mix.reindex(FHS_TIERS[::-1]).dropna().items()),
+               "summary_metrics.json / fhs_tier_mix", lang, BADGE_WHOLE, H)
 
     c3, c4 = grid(2)
     chart_card(c3, t("s2.factors.h", lang), t("s2.factors.lead", lang),

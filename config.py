@@ -27,8 +27,14 @@ FHS_TIERS = ["Distressed", "Vulnerable", "Thin-file", "Stable", "Resilient"]
 ES_LEVELS = ["Cooling", "Warm", "Active", "Champion"]
 SEGMENTS = ["GROW", "REACTIVATE", "PROTECT", "BUILD"]
 SUB_SEGMENTS = [
-    "Prime Champions", "Loyal Core", "Sleeping Prime", "Cautious Growers",
-    "Credit-Hungry Stressed", "Silent Risk", "New-to-Credit Explorers", "Dormant Unknowns",
+    # GROW
+    "Prime Champions", "Loyal Core", "Cautious Growers",
+    # REACTIVATE
+    "Sleeping Prime",
+    # PROTECT
+    "Silent Risk", "Credit-Hungry Stressed", "Credit-Hungry Newcomers", "Stretched Seekers",
+    # BUILD
+    "Dormant Unknowns", "New-to-Credit Explorers",
 ]
 
 # ---- palette, lifted from the notebook so the dashboard matches the figures ----
