@@ -1,0 +1,17 @@
+# ---------------------------------------------------------------------------
+# Customer-level data is NEVER committed. dashboard_sample.csv holds 40,000 real
+# customer records (income, province, debt ratio, credit ceiling). The aggregate
+# tables beside it contain no personal data and ARE committed.
+# ---------------------------------------------------------------------------
+data/dashboard_sample.csv
+data/customer_scores_nba.csv
+data/customer_scores_sample3000.csv
+data/figures/
+
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.streamlit/secrets.toml
+_smoke_charts.py
