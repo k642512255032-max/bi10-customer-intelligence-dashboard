@@ -14,7 +14,7 @@ from pathlib import Path
 import pandas as pd
 import streamlit as st
 
-from config import DATA_DIR, METRICS_FILE, SAMPLE_FILE
+from config import DATA_DIR, METRICS_FILE, sample_path
 
 
 @st.cache_data(show_spinner=False)
@@ -31,7 +31,7 @@ def load_csv(name: str, data_dir: str = str(DATA_DIR)) -> pd.DataFrame:
 @st.cache_data(show_spinner="Loading the customer sample...")
 def load_sample(data_dir: str = str(DATA_DIR)) -> pd.DataFrame:
     """Row-level sample, already reweighted to the population. May be absent."""
-    path = Path(data_dir) / SAMPLE_FILE
+    path = sample_path()
     if not path.exists():
         return pd.DataFrame()
     df = pd.read_csv(

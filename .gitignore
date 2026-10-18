@@ -1,7 +1,7 @@
 # ---------------------------------------------------------------------------
-# Customer-level data is NEVER committed. dashboard_sample.csv holds 40,000 real
-# customer records (income, province, debt ratio, credit ceiling). The aggregate
-# tables beside it contain no personal data and ARE committed.
+# The BI10 dataset is generated (not real customers), so the customer-level
+# sample IS published - but as dashboard_sample.csv.gz (3.6 MB) rather than the
+# 42 MB raw CSV, to keep clones and cloud deploys fast. pandas reads .gz natively.
 # ---------------------------------------------------------------------------
 data/dashboard_sample.csv
 data/customer_scores_nba.csv

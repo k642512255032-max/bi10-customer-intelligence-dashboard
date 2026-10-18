@@ -48,18 +48,21 @@ streamlit run app.py
 
 The app looks for data in `./data`, or in `$BI10_DATA_DIR` if that is set.
 
-## Data, and what is deliberately not in this repo
+## Data
 
-Committed (no personal data, ~90 KB):
-`summary_metrics.json`, `segment_profile.csv`, `sub_segment_profile.csv`,
-`matrix_fhs_es.csv`, `opportunity_map.csv`, `call_allocation_by_segment.csv`,
-`fhs_scorecard.csv`, `figure_index.csv`.
+The BI10 dataset is **generated, not real customer records**, so the full customer-level
+sample is published here along with the aggregate tables.
 
-**Not committed:** `data/dashboard_sample.csv` - 40,000 real customer records with
-income, province, debt ratio and credit ceiling. It is git-ignored on purpose. Without
-it the app still runs; the distribution charts, the FHS x ES scatter and the customer
-explorer show a notice instead. To get the full experience, extract
-`dashboard_sample.csv` from your RESULTS_PACK into `data/`.
+| File | Size | What |
+|---|---|---|
+| `data/dashboard_sample.csv.gz` | 3.6 MB | 50,000 customer rows x 44 columns |
+| `data/summary_metrics.json` | 93 KB | 136 metric keys, every population-level number |
+| `data/*.csv` | ~20 KB | segment, sub-segment, matrix, opportunity, call-allocation, scorecard |
+
+The sample is committed **gzipped**: the raw CSV is 42 MB, the gzip is 3.6 MB (8.5%), and
+pandas reads `.csv.gz` natively with no code change. `config.sample_path()` prefers the
+`.gz` and falls back to an uncompressed `dashboard_sample.csv` if you drop one in, so the
+42 MB raw file stays git-ignored for local work.
 
 Source pack: `RESULTS_PACK (3).zip`, 2026-10-18 09:18, produced by
 `BI10_R02_FINAL_v5-4.ipynb`. Snapshot 4 Jun 2025, 1,000,528 customers,

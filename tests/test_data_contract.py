@@ -12,7 +12,8 @@ import pytest
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT))
 
-from config import DATA_DIR, ES_LEVELS, FHS_TIERS, SEGMENTS, SUB_SEGMENTS  # noqa: E402
+from config import (DATA_DIR, ES_LEVELS, FHS_TIERS, SEGMENTS, SUB_SEGMENTS,  # noqa: E402
+                    sample_path)
 from data_loader import add_weights, split_table  # noqa: E402
 from focus import SEGMENT_INDEXED, SEGMENT_SUBS, apply_focus  # noqa: E402
 from formatting import auc_plain, pct, vnd  # noqa: E402
@@ -34,9 +35,9 @@ def sub_profile():
 
 @pytest.fixture(scope="module")
 def sample(sub_profile):
-    path = DATA_DIR / "dashboard_sample.csv"
+    path = sample_path()
     if not path.exists():
-        pytest.skip("customer-level sample not present (expected on a public deployment)")
+        pytest.skip("customer-level sample not present")
     df = pd.read_csv(path, low_memory=False, encoding="utf-8")
     df["NBA_TRIGGER"] = df["NBA_TRIGGER"].fillna("None")
     df["PROVINCE"] = df["PROVINCE"].fillna("Unknown")

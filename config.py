@@ -8,6 +8,7 @@ APP_DIR = Path(__file__).resolve().parent
 DATA_DIR = Path(os.getenv("BI10_DATA_DIR", APP_DIR / "data"))
 
 SAMPLE_FILE = "dashboard_sample.csv"
+SAMPLE_FILE_GZ = "dashboard_sample.csv.gz"
 METRICS_FILE = "summary_metrics.json"
 
 # Aggregate tables; these carry no personal data and are safe to publish.
@@ -67,6 +68,11 @@ PLOT_LAYOUT = dict(
 )
 
 
+def sample_path():
+    """Prefer the committed gzipped sample; fall back to a local uncompressed one."""
+    gz = DATA_DIR / SAMPLE_FILE_GZ
+    return gz if gz.exists() else DATA_DIR / SAMPLE_FILE
+
+
 def sample_available() -> bool:
-    """The customer-level sample is git-ignored; the deployed app runs without it."""
-    return (DATA_DIR / SAMPLE_FILE).exists()
+    return sample_path().exists()
