@@ -76,3 +76,57 @@ def chart_block(title: str, lead: str, fig, how_to_read: str, source: str,
 
 def no_sample_notice(lang: str) -> None:
     st.info(t("ui.no_sample", lang))
+
+
+# ---------------------------------------------------------------- dashboard layout
+KPI_CSS = """
+<style>
+div[data-testid="stMetric"] {background: #ffffff; border: 1px solid #e6e4dc;
+  border-radius: 10px; padding: 12px 14px 10px 14px;}
+div[data-testid="stMetricLabel"] p {font-size: 0.78rem; color: #6b6a65;
+  text-transform: uppercase; letter-spacing: .03em;}
+div[data-testid="stMetricValue"] {font-size: 1.55rem; font-weight: 600;}
+div[data-testid="stVerticalBlockBorderWrapper"] {background: #ffffff;}
+.block-container {padding-top: 2.2rem; padding-bottom: 1rem;}
+h1 {font-size: 1.75rem !important; margin-bottom: .2rem;}
+</style>
+"""
+
+
+def kpi_cards(items: list[tuple[str, str]], helps: list[str] | None = None) -> None:
+    """A row of Power-BI style KPI tiles."""
+    cols = st.columns(len(items))
+    for i, (label, value) in enumerate(items):
+        with cols[i]:
+            st.metric(label, value, help=(helps[i] if helps else None))
+
+
+def grid(n: int = 2):
+    """n equal columns for a dashboard-style chart grid."""
+    return st.columns(n, gap="medium")
+
+
+def chart_card(col, title: str, lead: str, fig, how_to_read: str, source: str,
+               lang: str, badge_kind: str = BADGE_WHOLE, height: int | None = None) -> None:
+    """One chart inside a bordered card, sized for a grid cell."""
+    with col:
+        with st.container(border=True):
+            st.markdown(f"**{title}**")
+            if lead:
+                st.caption(lead)
+            badge(badge_kind, lang)
+            if fig is None:
+                st.info(t("ui.too_few", lang, n=MIN_ROWS))
+                return
+            if height:
+                fig.update_layout(height=height)
+            st.plotly_chart(fig, use_container_width=True)
+            with st.expander(t("ui.how_to_read", lang)):
+                st.markdown(how_to_read)
+                st.caption(f"{t('ui.source', lang)}: {source}")
+
+
+def section_title(title: str, lead: str = "") -> None:
+    st.markdown(f"#### {title}")
+    if lead:
+        st.caption(lead)
